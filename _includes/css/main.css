@@ -462,6 +462,7 @@ footer .footer-below {
 
 .nav.navbar > li > a:hover {
   color: #{{ site.color.secondary-dark }};
+  border-bottom: 3px solid white;
 }
 
 .white {

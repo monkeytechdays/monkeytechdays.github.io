@@ -443,7 +443,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.navbar-nav>.active>a {
+.navbar-nav>.acative>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
 
@@ -460,9 +460,9 @@ footer .footer-below {
   border: 0;
 }
 
-.nav.navbar > li > a:hover {
+.navbar > li > a:hover, .navbar > li > a:focus {
   color: #{{ site.color.secondary-dark }};
-  border-bottom: 3px solid white;
+  border-bottom : 3px solid white;
 }
 
 .white {

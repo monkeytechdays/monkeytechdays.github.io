@@ -2,11 +2,32 @@
 layout: default
 modal-id: 6
 date: 2014-07-15
-img: submarine.png
+event: feign-vs-retrofit
+img: feign-vs-retrofit.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description:
+  - line: 'Pour cette première édition des Monkey Tech Days, les deux premières technologies à comparer seront : Feign et Retrofit. L’évènement aura lieu à la Cantine  Toulouse, de ..h à ..h.'
+  - line: Nous avons choisi ces deux technologies car …
+requirements:
+  - line: Des connaissances en Java
+  - line: Un compte Github
+  - line: Venir avec son PC portable
+coach:
+  - name: Igor Laborie
+    img: igor.jpg
+    description: Développeur passioné depuis 15 ans. Expert dans les technos Java et Web. Je participe et anime souvent des rdv techniques internes à ma société ou dans des meeting comme le Toulouse JUG, Software Craftmanship Toulouse.
+  - name: Emmanuel Vinas
+    img: emmanuel.jpg
+    description: Développeur Sénior & co-fondateur de la société MonkeyPatch. 9 ans d'expérience. Passioné par la technique, les nouvelles technologies. Leader technique, Architecture web et mobile.
+location:
+  link: https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMd6HkZC8rhIRziK-ouZurPk&key=AIzaSyBKZTDy9ihYWyyFBf9ncCzQ7BLSLYzIuNw
+  info:
+    - line: Ligne B - François Verdier/Lignes A et B - Jean Jaurès
+    - line: Vélo Toulouse - station en face de La Cantine Toulouse
+    - line: Parking Saint Aubin
+    - line: Mobilib' station François Verdier
 
 ---

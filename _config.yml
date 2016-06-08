@@ -24,7 +24,7 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: FFFFFF
+  primary: 1AB2F5 #1AB2F5
   primary-rgb: "255,255,255"
   secondary: 1AB2F5 #1AB2F5
   secondary-dark: 026ca6 #026ca6
@@ -33,26 +33,29 @@ color:
 footer:
   copyright: 2016 MonkeyPatch - Termes et conditions
   shortlinks: Liens rapides
-  social: Around the Web
-  credits: Credits
+  social: Réseaux sociaux
+  contact: Contact
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
 
 # Postal address (add as many lines as necessary)
 address:
+  - line: mktd@monkeypatch.io
+  - line: '0534326145'
   - line: 12 avenue de l'Europe
   - line: 31520 Ramonville St Agne, France
+
+# Postal address (add as many lines as necessary)
+links:
+  - line: C'est quoi?
+    link: whatisit
+  - line: Au programme
+    link: program
+  - line: Les événements
+    link: events
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'

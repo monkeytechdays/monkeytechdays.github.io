@@ -39,12 +39,12 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: https://twitter.com/hashtag/MKTD?src=hash
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: mktd@monkeypatch.io
-  - line: '0534326145'
+# Contact info
+phone: '0534326145'
+adresslink: https://goo.gl/maps/Ym18AbCuNCo
+adress:
   - line: 12 avenue de l'Europe
   - line: 31520 Ramonville St Agne, France
 

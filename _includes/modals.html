@@ -13,6 +13,8 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <img src="img/events/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.description %}
+
                             {% for d in post.description %}
                             <p>{{ d.line }}</p>
                             {% endfor %}
@@ -26,7 +28,7 @@
                             <div class="col-lg-12">
                             <p>Pour cette édition, les deux coachs seront:</p>
                             {% for c in post.coach %}
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 coach-card">
                               <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
                               <p class="coach-name">{{c.name}}</p>
                               <p>{{c.description}}</p>
@@ -47,6 +49,7 @@
                             <div class="col-lg-12">
                               <button type="button" class="btn btn-default">Inscription</button>
                             </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

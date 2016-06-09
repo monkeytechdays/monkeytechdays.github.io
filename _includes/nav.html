@@ -18,15 +18,13 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    {% for nav in site.navs %}
+
                     <li class="page-scroll">
-                        <a href="#whatisit">C'est quoi</a>
+                        <a href="#{{nav.link}}">{{nav.label}}</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#program">programme</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#events">Evènements</a>
-                    </li>
+
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -42,19 +42,18 @@ social:
     url: https://twitter.com/hashtag/MKTD?src=hash
 
 # Contact info
-phone: '0534326145'
+phone: '05 34 32 61 45'
 adresslink: https://goo.gl/maps/Ym18AbCuNCo
 adress:
   - line: 12 avenue de l'Europe
   - line: 31520 Ramonville St Agne, France
 
-# Postal address (add as many lines as necessary)
-links:
-  - line: C'est quoi?
+navs:
+  - label: C'est quoi?
     link: whatisit
-  - line: Au programme
+  - label: Au programme
     link: program
-  - line: Les événements
+  - label: Les événements
     link: events
 
 # Credits content

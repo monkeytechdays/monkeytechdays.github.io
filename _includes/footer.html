@@ -6,8 +6,8 @@
                     <div class="footer-col col-md-4">
                       <h4>{{ site.footer.shortlinks }}</h4>
                       <p>
-                      {% for l in site.links %}
-                      <p class="page-scroll"><a href="#{{ l.link }}">{{ l.line }}</a> <br></p>
+                      {% for nav in site.navs %}
+                      <p class="page-scroll"><a href="#{{ nav.link }}">{{ nav.label }}</a> <br></p>
                       {% endfor %}
                       </p>
                     </div>
@@ -16,9 +16,11 @@
                         <p><a href="mailto:{{site.email}}">{{site.email}}</a></p>
                         <p><a href="tel:{{site.phone}}">{{site.phone}}</a></p>
                         <p>
-                          {% for adr in site.adress %}
-                          <a href="{{ site.adresslink }}">{{ adr.line }} <br></a>
-		                      {% endfor %}
+                          <a href="{{ site.adresslink }}">
+                            {% for adr in site.adress %}
+                              {{ adr.line }} <br>
+		                        {% endfor %}
+                          </a>
                         </p>
                     </div>
                     <div class="footer-col col-md-4">

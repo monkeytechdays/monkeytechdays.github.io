@@ -111,8 +111,8 @@ header .intro-text .skills {
     font-weight: 300;
 }
 header .container {
-    padding-top: 40%;
-    padding-bottom: 100px;
+    padding-top: 35%;
+    padding-bottom: 0;
 }
 @media(min-width:768px) {
     header .intro-text .name {
@@ -125,14 +125,17 @@ header .container {
 }
 
 @media(min-width:768px) {
-
+  header {
+    max-height: 100vh;
+  }
+}
+@media(min-width:768px) {
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
     }
-
 }
 .navbar-fixed-top {
   padding: 15px 0;
@@ -142,6 +145,7 @@ header .container {
 }
 .navbar-fixed-top.navbar-shrink {
   padding: 0;
+  background-image: none;
   background-color: #{{site.color.primary}};
   transition: all 1s ease-in-out;
 }
@@ -565,6 +569,10 @@ header {
 }
 
 body > .navbar {
-  background: transparent;
-  transition: all 1s ease-in-out;
+  background: linear-gradient( 0deg, transparent, rgba(0, 0, 0, .3) );
+  transition: all .3s ease-in-out;
+}
+
+section:last-child {
+  padding-top: 1rem;
 }

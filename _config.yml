@@ -53,8 +53,10 @@ navs:
     link: presentation
   - label: Les événements
     link: events
-  - label: Inscription
-    link: ''
+
+inscription:
+  label: Inscription
+  link: http://www.meetup.com/fr-FR/Monkey-Tech-Days/
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'

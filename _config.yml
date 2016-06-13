@@ -55,7 +55,7 @@ navs:
     link: events
 
 inscription:
-  label: Inscription
+  label: S'inscrire
   link: http://www.meetup.com/fr-FR/Monkey-Tech-Days/
 
 # Credits content

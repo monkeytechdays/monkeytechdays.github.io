@@ -9,26 +9,47 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
+title: Journée rassemblant des TechAddicts pour évaluer des clients REST Java modernes
 description:
-  - line: 'Pour cette première édition des Monkey Tech Days, les deux premières technologies à comparer seront : Feign et Retrofit. L’évènement aura lieu à la Cantine  Toulouse, de ..h à ..h.'
-  - line: Nous avons choisi ces deux technologies car …
+  - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l\'approfondissement de ces Bibliothèques.
+
 requirements:
-  - line: Des connaissances en Java
-  - line: Un compte Github
-  - line: Venir avec son PC portable
+  - line: Connaître Java
+  - line: Java 8, Maven 3, Git et IDE installés
+  - line: Venir si possible avec son PC
+
+program:
+  - line: Experimenter Feign ou Retrofit en Équipe
+  - line: Réaliser des Défis Téchniques
+  - line: Échanger avec la Communauté Toulousaine
+  - line: Evaluer les Technos
+
 coach:
   - name: Igor Laborie
     img: igor.jpg
-    description: Développeur passioné depuis 15 ans. Expert dans les technos Java et Web. Je participe et anime souvent des rdv techniques internes à ma société ou dans des meeting comme le Toulouse JUG, Software Craftmanship Toulouse.
+    description: Expert Java et Web de 15 ans d'Exp.
+    email: igor@monkeypatch.io
   - name: Emmanuel Vinas
     img: emmanuel.jpg
-    description: Développeur Sénior & co-fondateur de la société MonkeyPatch. 9 ans d'expérience. Passioné par la technique, les nouvelles technologies. Leader technique, Architecture web et mobile.
+    description: Expert Java et Mobile de 10 ans d'Exp.
+    email: emmanuel@monkeypatch.io
 location:
-  link: https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMd6HkZC8rhIRziK-ouZurPk&key=AIzaSyBKZTDy9ihYWyyFBf9ncCzQ7BLSLYzIuNw
-  info:
-    - line: Ligne B - François Verdier/Lignes A et B - Jean Jaurès
-    - line: Vélo Toulouse - station en face de La Cantine Toulouse
-    - line: Parking Saint Aubin
-    - line: Mobilib' station François Verdier
+  link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.1079799713966!2d1.4521176154961721!3d43.60429327912296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc90b551fd59%3A0x314ab3097ca9960d!2s32+Rue+Riquet%2C+31000+Toulouse!5e0!3m2!1sfr!2sfr!4v1465827832373
+
+info:
+    - line: Accueil des participant(e)s
+      time: 9h00 - 9h15
+    - line: Présentation du programme
+      time: 9h15 - 9h30
+    - line: Petit Déj., Constitution des équipes
+      time: 9h30 - 9h45
+    - line: 3 à 4 défis techniques
+      time: 9h45 - 12h30
+    - line: Pause Déjeuner
+      time: 12h30 - 13h30
+    - line: 3 à 4 défis techniques
+      time: 13h30 - 18h30
+    - line: Apéro dînatoire & Bilan technique
+      time: 18h30 - 19h30
 
 ---

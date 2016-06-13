@@ -144,7 +144,6 @@ header .container {
   transition: padding .3s;
 }
 .navbar-fixed-top.navbar-shrink {
-  padding: 0;
   background-image: none;
   background-color: #{{site.color.primary}};
   transition: all 1s ease-in-out;
@@ -478,7 +477,7 @@ footer .footer-below {
 
 .white {
   background-color: #FFFFFF;
-  color: #{{site.color.primary}};
+  color: #000;
 }
 
 .blue {
@@ -520,7 +519,7 @@ footer .footer-below {
   border-color: transparent;
 }
 
-.col-lg-12 {
+.modal-content .col-lg-12 {
   padding: 2rem;
 }
 
@@ -564,7 +563,7 @@ footer .footer-below {
 }
 
 header {
-  background: url('img/header.png') no-repeat;
+  background: url('img/header.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -575,4 +574,36 @@ body > .navbar {
 
 section:last-child {
   padding-top: 1rem;
+}
+
+.navbar-brand {
+  width: 150px;
+  background: url('img/logo.png') no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+.sub-title {
+  font-size: 32px;
+  padding-bottom: 1rem;
+}
+
+#presentation p {
+  text-align: justify;
+}
+#presentation title {
+  color: grey;
+}
+
+.inscription-border {
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.placeholder {
+  height: 300px;
+}
+
+p span {
+  color: #{{site.color.primary}};
 }

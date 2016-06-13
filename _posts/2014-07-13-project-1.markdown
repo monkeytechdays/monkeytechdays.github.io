@@ -9,7 +9,8 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-title: Journée rassemblant des TechAddicts pour évaluer des clients REST Java modernes
+title: Journée rassemblant des TechAddicts
+subtitle : pour évaluer des clients REST Java modernes
 description:
   - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l\'approfondissement de ces Bibliothèques.
 
@@ -51,5 +52,6 @@ info:
       time: 13h30 - 18h30
     - line: Apéro dînatoire & Bilan technique
       time: 18h30 - 19h30
-
+inscription:
+        link: http://www.meetup.com/fr-FR/Monkey-Tech-Days/events/231796229/
 ---

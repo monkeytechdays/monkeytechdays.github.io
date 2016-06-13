@@ -110,13 +110,11 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
-
+header .container {
+    padding-top: 40%;
+    padding-bottom: 100px;
+}
 @media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
     header .intro-text .name {
         font-size: 4.75em;
     }
@@ -127,12 +125,6 @@ header .intro-text .skills {
 }
 
 @media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
@@ -141,13 +133,21 @@ header .intro-text .skills {
         transition: all .3s;
     }
 
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
+}
+.navbar-fixed-top {
+  padding: 15px 0;
+  -webkit-transition: padding .3s;
+  -moz-transition: padding .3s;
+  transition: padding .3s;
+}
+.navbar-fixed-top.navbar-shrink {
+  padding: 0;
+  background-color: #{{site.color.primary}};
+  transition: all 1s ease-in-out;
+}
 
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+.navbar-fixed-top.navbar-shrink .navbar-brand {
+  font-size: 1.5em;
 }
 
 .navbar {
@@ -463,9 +463,13 @@ footer .footer-below {
   border: 0;
 }
 
-.navbar > li > a:hover, .navbar > li > a:focus {
+.navbar > li > a:hover {
   color: #{{ site.color.secondary-dark }};
   border-bottom : 3px solid white;
+}
+
+.navbar-nav > li > a:focus {
+  color: #FFFFFF !important;
 }
 
 .white {
@@ -538,19 +542,29 @@ footer .footer-below {
   padding: 2rem;
 }
 
+.navbar-toggle {
+  border: 0;
+}
+
 .navbar-toggle:focus,
 .scroll-top a:focus {
   background-color: transparent !important;
 }
 
 .navbar-toggle:hover {
-  background-color: #FFFFFF !important;
+  background-color: transparent !important;
 }
 
 .scroll-top a:hover i {
   color: #{{site.color.primary}} !important;
 }
 
-.navbar-toggle:hover > .icon-bar {
-  background-color: #{{site.color.primary}} !important;
+header {
+  background: url('img/header.png') no-repeat;
+  background-size: cover;
+}
+
+body > .navbar {
+  background: transparent;
+  transition: all 1s ease-in-out;
 }

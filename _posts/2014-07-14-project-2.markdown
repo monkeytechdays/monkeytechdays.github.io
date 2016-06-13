@@ -3,7 +3,8 @@ layout: default
 modal-id: 2
 date: 2014-07-14
 event: angular-vs-react
-img: angular-vs-react.jpg
+img: angular-vs-react.png
+header: modal/angular-vs-react.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

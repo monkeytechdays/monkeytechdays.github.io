@@ -13,7 +13,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2 class="modal-title">MonkeyTechDay #{{ post.modal-id }}</h2>
-                        <img src="img/events/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}"> {% if post.description %} {% for d in post.description %}
+                        <img src="img/events/{{ post.header }}" class="img-responsive img-centered" alt="{{ post.alt }}"> {% if post.description %} {% for d in post.description %}
                         <p>{{ d.line }}</p>
                         {% endfor %}
 

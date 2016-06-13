@@ -49,12 +49,12 @@ adress:
   - line: 31520 Ramonville St Agne, France
 
 navs:
-  - label: C'est quoi?
-    link: whatisit
-  - label: Au programme
-    link: program
+  - label: Presentation
+    link: presentation
   - label: Les événements
     link: events
+  - label: Inscription
+    link: ''
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'

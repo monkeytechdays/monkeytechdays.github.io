@@ -12,7 +12,7 @@ category: Web Development
 title: Journée rassemblant des TechAddicts
 subtitle : pour évaluer des clients REST Java modernes
 description:
-  - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l\'approfondissement de ces Bibliothèques.
+  - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l'approfondissement de ces Bibliothèques.
 
 requirements:
   - line: Connaître Java
@@ -48,7 +48,7 @@ info:
       time: 9h45 - 12h30
     - line: Pause Déjeuner
       time: 12h30 - 13h30
-    - line: 3 à 4 défis techniques
+    - line: 3 à 4 autres défis techniques
       time: 13h30 - 18h30
     - line: Apéro dînatoire & Bilan technique
       time: 18h30 - 19h30

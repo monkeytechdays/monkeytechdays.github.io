@@ -4,11 +4,11 @@ modal-id: 2
 date: 2014-07-14
 event: angular-vs-react
 img: angular-vs-react.png
-header: modal/angular-vs-react.jpg
+header: angular-vs-react.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
+title: Détails prochainement
 
 ---
-title: Détails prochainement

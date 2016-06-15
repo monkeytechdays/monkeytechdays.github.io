@@ -39,21 +39,23 @@
                             {% endfor %}
                           </div>
 
-                           <div class="col-lg-6 col-md-6 timeline">
+                           <div class="col-md-6 timeline">
                               <div class="col-sm-6 col-sm-offset-3">
                                 <h4>Vendredi</h4>
                                 <h3>8 Juillet</h3>
-                                <div class="hours">9h00 - 18h30</div>
+                                <div class="blue">9h00 - 18h30</div>
                               </div>
                               {% for i in post.info %}
                               <div class="row">
                                 <div class="col-sm-12">
-                                <div class="col-sm-4 time">{{i.time}}</div>
-                                <div class="col-sm-8 line">{{i.line}}</div>
+                                  <div class="col-sm-4 time">{{i.time}}</div>
+                                  <div class="col-sm-8 line">{{i.line}}</div>
                                 </div>
                               </div>
                               {% endfor %}
                           </div>
+
+                            <a class="btn btn-default" href="{{post.inscription.link}}" target="_blank">S'inscrire</a>
                         </div>
                         <div class="row">
 
@@ -61,21 +63,25 @@
                               <div class="blue-title">Avec le coaching de 2 experts:</div>
 
                             {% for c in post.coach %}
-                            <div class="col-lg-6 col-md-6 coach-card">
-                              <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
-                              <p class="coach-name">{{c.name}}</p>
-                              <p>{{c.description}}</p>
-                              <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
+                            <div class="col-sm-6 coach-card">
+                              <div class="col-sm-5">
+                                <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
+                              </div>
+                              <div class="col-sm-7">
+                                <p class="coach-name">{{c.name}}</p>
+                                <h5 class="blue">Équipe</h5>
+                                <h5 class="blue">{{c.tech}}</h5>
+                                <p>{{c.description}}</p>
+                                <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
+                              </div>
                             </div>
                             {% endfor %}
                           </div>
                             <div class="col-sm-12 location-card">
-                              <a class="blue-title" href="http://oikosysteme.com/#labos" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Lab'Oïkos de St Aubin:</a>
+                              <a class="blue-title" href="http://oikosysteme.com/#labos" target="_blank">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de Lab'Oïkos de St Aubin:</a>
                               <iframe frameborder="0" src="{{post.location.link}}" allowfullscreen></iframe>
                             </div>
-                          </div>
-                          <div class="col-lg-12">
-                             <a class="btn btn-default" href="{{post.inscription.link}}" target="_blank">Inscription</a>
                           </div>
                           {% endif %}
                         </div>

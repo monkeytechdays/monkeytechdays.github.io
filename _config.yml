@@ -49,7 +49,7 @@ adress:
   - line: 31520 Ramonville St Agne, France
 
 navs:
-  - label: Presentation
+  - label: Présentation
     link: presentation
   - label: Les événements
     link: events

@@ -42,6 +42,21 @@ h6 {
     font-weight: 700;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+@media(min-width:768px) {
+  h4 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -468,6 +483,15 @@ footer .footer-below {
   color: #{{site.color.secondary}};
 
 }
+.modal-body .btn {
+  padding: 1rem 5rem;
+  margin-top: 2rem;
+  border-color: transparent;
+  background-color: #{{site.color.secondary}};
+}
+.modal-body .btn:hover {
+  background-color: grey;
+}
 .modal-header h4 {
   font-weight: normal;
 }
@@ -478,10 +502,11 @@ footer .footer-below {
 .coach-card {
   margin-top: 3rem;
 }
-
+.coach-card h5 {
+  margin: 0;
+}
 .coach-img {
   width: 100px;
-  float: left;
   margin-right: 1rem;
   border-radius: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -494,9 +519,13 @@ footer .footer-below {
 .blue-title {
   color: #{{site.color.primary}};
   font-weight: bold;
-  font-size: 2rem;
   text-align: left;
   padding: 1rem 0;
+}
+@media(min-width:767px) {
+  .blue-title {
+    font-size: 2rem;
+  }
 }
 
 .modal-body button {
@@ -549,8 +578,14 @@ header {
 }
 
 body > .navbar {
-  background: linear-gradient( 0deg, transparent, rgba(0, 0, 0, .3) 40%);
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, .5) 20%);
   transition: all .3s ease-in-out;
+}
+
+@media(min-width:768px) {
+  body > .navbar {
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, .3));
+  }
 }
 
 section:last-child {
@@ -584,6 +619,7 @@ section:last-child {
 .inscription-border {
   border: 1px solid white;
   border-radius: 15px;
+  padding: 1rem;
 }
 
 .modal-header button {
@@ -597,6 +633,12 @@ section:last-child {
   color: #{{site.color.secondary-dark}};
   outline: 0;
 }
+.modal-header h4 {
+  margin-bottom: 0;
+}
+.modal-header h3 {
+  margin-top: 0;
+}
 @media(min-width:767px) {
     .modal-header button {
       position: absolute;
@@ -605,17 +647,19 @@ section:last-child {
     .modal-body iframe {
       height: 500px;
     }
+    .timeline .time {
+      text-align: right;
+    }
+    .timeline .line {
+      text-align: left;
+    }
 }
 .timeline {
   margin-top: 3rem;
   color: #{{site.color.primary}};
 }
 .timeline .line {
-  text-align: left;
   color: #{{site.color.secondary}};
-}
-.timeline .time {
-  text-align: right;
 }
 .timeline > div {
   padding: .3rem;
@@ -628,10 +672,6 @@ section:last-child {
 .timeline h3 {
   margin: 0;
   text-align: left;
-}
-.hours {
-  background-color: #{{site.color.primary}};
-  color: #FFFFFF;
 }
 
 .fa-map-marker {

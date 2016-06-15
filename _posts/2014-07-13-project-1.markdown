@@ -9,8 +9,8 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-title: Journée rassemblant des TechAddicts
-subtitle : pour évaluer des clients REST Java modernes
+title: Journée rassemblant des TechAddicts pour
+subtitle : évaluer des clients REST Java modernes
 description:
   - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l'approfondissement de ces Bibliothèques.
 
@@ -30,10 +30,12 @@ coach:
     img: igor.jpg
     description: Expert Java et Web de 15 ans d'Exp.
     email: igor@monkeypatch.io
+    tech: Feign
   - name: Emmanuel Vinas
     img: emmanuel.jpg
     description: Expert Java et Mobile de 10 ans d'Exp.
     email: emmanuel@monkeypatch.io
+    tech: Retrofit
 location:
   link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.1079799713966!2d1.4521176154961721!3d43.60429327912296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc90b551fd59%3A0x314ab3097ca9960d!2s32+Rue+Riquet%2C+31000+Toulouse!5e0!3m2!1sfr!2sfr!4v1465827832373
 

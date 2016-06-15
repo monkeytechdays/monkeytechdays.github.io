@@ -200,13 +200,14 @@ header .container {
 }
 
 section {
-    padding: 100px 0;
+    padding: 4rem 0;
     color: #fff;
     background: #{{ site.color.primary }};
 }
 
 section h2 {
     font-size: 3rem;
+    margin-bottom: 4rem;
 }
 
 section.success {
@@ -214,7 +215,10 @@ section.success {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
+        padding: 3rem 0;
+    }
+    section h2 {
+        font-size: 2.5rem;
     }
 
     section.first {
@@ -615,6 +619,10 @@ section:last-child {
 #presentation title {
   color: grey;
 }
+#presentation iframe {
+  width: 100%;
+  height: 270px;
+}
 
 .inscription-border {
   border: 1px solid white;
@@ -622,14 +630,14 @@ section:last-child {
   padding: 1rem;
 }
 
-.modal-header button {
+.modal-header a {
   color: #{{site.color.primary}};
   font-size: 5rem;
 }
-.modal-header button:hover {
+.modal-header a:hover {
   color: #{{site.color.secondary-dark}};
 }
-.modal-header button:focus {
+.modal-header a:focus {
   color: #{{site.color.secondary-dark}};
   outline: 0;
 }
@@ -640,7 +648,7 @@ section:last-child {
   margin-top: 0;
 }
 @media(min-width:767px) {
-    .modal-header button {
+    .modal-header a {
       position: absolute;
       right: -1rem;
     }

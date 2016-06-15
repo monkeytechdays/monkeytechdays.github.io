@@ -51,3 +51,10 @@ $('div.modal').on('hide', function() {
 	var hash = this.id;
 	history.pushState('', document.title, window.location.pathname);
 });
+
+$(document).ready(function() {
+  var ref =  window.location.href.split('#')[1];
+  if(ref && ref.indexOf('eventsModal') != -1) {
+    $('#' + ref).modal('show');
+  }
+});

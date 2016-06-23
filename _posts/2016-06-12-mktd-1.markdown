@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-15
+date: 2016-06-12
 event: feign-vs-retrofit
-img: feign-vs-retrofit.png
-header: modal/feign-vs-retrofit.png
+img: feign-vs-retrofit.jpg
+header: modal/feign-vs-retrofit.jpg
 alt: image-alt
-project-date: April 2014
+project-date: July 2016
 client: Start Bootstrap
 category: Web Development
 title: Journée rassemblant des TechAddicts pour

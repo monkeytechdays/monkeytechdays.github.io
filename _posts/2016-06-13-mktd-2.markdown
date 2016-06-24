@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 2
-date: 2016-06-11
+date: 2016-10-14
 event: angular-vs-react
 img: angular-vs-react.jpg
 header: angular-vs-react.jpg

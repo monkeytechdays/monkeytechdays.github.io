@@ -40,8 +40,39 @@
 
                        <div class="col-md-6 timeline">
                           <div class="col-sm-6 col-sm-offset-3">
-                            <h4>Vendredi</h4>
-                            <h3>8 Juillet</h3>
+                            <!-- Whitespace added for readability -->
+                            <h4>
+                              {% assign dy = post.date | date: "%a" %}
+                              {% case dy %}
+                                {% when "Mon" %}Lundi
+                                {% when "Tue" %}Mardi
+                                {% when "Wed" %}Mercredi
+                                {% when "Thu" %}Jeudi
+                                {% when "Fri" %}Vendredi
+                                {% when "Sat" %}Samedi
+                                {% when "Sun" %}Dimanche
+                              {% else %}{{ dy }}
+                              {% endcase %}
+                            </h4>
+                            <h3>
+                              {{ post.date | date: "%-d" }}
+                              {% assign m = post.date | date: "%-m" %}
+                              {% case m %}
+                                {% when '1' %}Janvier
+                                {% when '2' %}Février
+                                {% when '3' %}Mars
+                                {% when '4' %}Avril
+                                {% when '5' %}Mai
+                                {% when '6' %}Juin
+                                {% when '7' %}Juillet
+                                {% when '8' %}Aout
+                                {% when '9' %}Septembre
+                                {% when '10' %}Octobre
+                                {% when '11' %}Novembre
+                                {% when '12' %}Decembre
+                              {% endcase %}
+                              {{ post.date | date: "%Y" }}
+                            </h3>
                             <div class="blue">9h00 - 18h30</div>
                           </div>
                           {% for i in post.info %}

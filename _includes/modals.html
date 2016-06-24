@@ -39,7 +39,7 @@
                       </div>
 
                        <div class="col-md-6 timeline">
-                          <div class="col-sm-6 col-sm-offset-3">
+                          <div class="col-sm-6 col-sm-offset-2">
                             <!-- Whitespace added for readability -->
                             <h4>
                               {% assign dy = post.date | date: "%a" %}
@@ -54,7 +54,7 @@
                               {% else %}{{ dy }}
                               {% endcase %}
                             </h4>
-                            <h3>
+                            <h4>
                               {{ post.date | date: "%-d" }}
                               {% assign m = post.date | date: "%-m" %}
                               {% case m %}
@@ -72,7 +72,7 @@
                                 {% when '12' %}Decembre
                               {% endcase %}
                               {{ post.date | date: "%Y" }}
-                            </h3>
+                            </h4>
                             <div class="blue">9h00 - 18h30</div>
                           </div>
                           {% for i in post.info %}

@@ -10,82 +10,79 @@
                     <img src="img/events/{{ post.header }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                     <h4>{{post.title}}</h4>
                     {% if post.subtitle %}
-                    <h3>{{post.subtitle}}</h3>
+                      <h3>{{post.subtitle}}</h3>
                     {% endif %}
                     <!-- descriptions -->
                     {% if post.description %}
-
-                    {% for d in post.description %}
-                    <p>{{ d.line }}</p>
+                      {% for d in post.description %}
+                      <p>{{ d.line }}</p>
                     {% endfor %}
                   </div>
-                    <div class="modal-body">
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6">
-                            <h4 class="blue-title">Au programme</h4>
-                            {% for p in post.program %}
-                              <p>
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                                <span class="requirements">{{p.line}}</span>
-                              </p>
-                            {% endfor %}
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <h4 class="blue-title">Au programme</h4>
+                        {% for p in post.program %}
+                          <p>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <span class="requirements">{{p.line}}</span>
+                          </p>
+                        {% endfor %}
 
-                            <div class="blue-title">Prérequis:</div>
-                            {% for r in post.requirements %}
-                            <p>
-                              <i class="fa fa-check" aria-hidden="true"></i>
-                              <span class="requirements">{{ r.line }}</span>
-                            </p>
-                            {% endfor %}
+                        <div class="blue-title">Prérequis:</div>
+                        {% for r in post.requirements %}
+                        <p>
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                          <span class="requirements">{{ r.line }}</span>
+                        </p>
+                        {% endfor %}
+                      </div>
+
+                       <div class="col-md-6 timeline">
+                          <div class="col-sm-6 col-sm-offset-3">
+                            <h4>Vendredi</h4>
+                            <h3>8 Juillet</h3>
+                            <div class="blue">9h00 - 18h30</div>
                           </div>
-
-                           <div class="col-md-6 timeline">
-                              <div class="col-sm-6 col-sm-offset-3">
-                                <h4>Vendredi</h4>
-                                <h3>8 Juillet</h3>
-                                <div class="blue">9h00 - 18h30</div>
-                              </div>
-                              {% for i in post.info %}
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <div class="col-sm-4 time">{{i.time}}</div>
-                                  <div class="col-sm-8 line">{{i.line}}</div>
-                                </div>
-                              </div>
-                              {% endfor %}
-                          </div>
-
-                            <a class="btn btn-default" href="{{post.inscription.link}}" target="_blank">S'inscrire</a>
-                        </div>
-                        <div class="row">
-
-                          <div class="col-lg-12">
-                              <div class="blue-title">Avec le coaching de 2 experts:</div>
-
-                            {% for c in post.coach %}
-                            <div class="col-sm-6 coach-card">
-                              <div class="col-sm-5">
-                                <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
-                              </div>
-                              <div class="col-sm-7">
-                                <p class="coach-name">{{c.name}}</p>
-                                <h5 class="blue">Équipe</h5>
-                                <h5 class="blue">{{c.tech}}</h5>
-                                <p>{{c.description}}</p>
-                                <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
-                              </div>
-                            </div>
-                            {% endfor %}
-                          </div>
-                            <div class="col-sm-12 location-card">
-                              <a class="blue-title" href="{{post.location.site}}" target="_blank">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de {{post.location.name}}:</a>
-                              <iframe frameborder="0" src="{{post.location.link}}" allowfullscreen></iframe>
+                          {% for i in post.info %}
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="col-sm-4 time">{{i.time}}</div>
+                              <div class="col-sm-8 line">{{i.line}}</div>
                             </div>
                           </div>
-                          {% endif %}
-                        </div>
+                          {% endfor %}
+                       </div>
+                      <a class="btn btn-default" href="{{post.inscription.link}}" target="_blank">S'inscrire</a>
                     </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                          <div class="blue-title">Avec le coaching de 2 experts:</div>
+
+                        {% for c in post.coach %}
+                        <div class="col-sm-6 coach-card">
+                          <div class="col-sm-5">
+                            <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
+                          </div>
+                          <div class="col-sm-7">
+                            <p class="coach-name">{{c.name}}</p>
+                            <h5 class="blue">Équipe</h5>
+                            <h5 class="blue">{{c.tech}}</h5>
+                            <p>{{c.description}}</p>
+                            <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                        <div class="col-sm-12 location-card">
+                          <a class="blue-title" href="{{post.location.site}}" target="_blank">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de {{post.location.name}}:</a>
+                          <iframe frameborder="0" src="{{post.location.link}}" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      {% endif %}
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

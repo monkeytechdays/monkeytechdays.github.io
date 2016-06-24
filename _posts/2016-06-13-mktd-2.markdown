@@ -11,7 +11,6 @@ client: Start Bootstrap
 category: Web Development
 title: Détails prochainement
 subtitle : évaluer les frameworks/librairies Js de 2016
----
 description:
   - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la librairie React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia. 
 

@@ -12,7 +12,7 @@ category: Web Development
 title: Détails prochainement
 subtitle : évaluer les frameworks/librairies Js de 2016
 description:
-  - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la librairie React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia. 
+  - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la librairie React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia.
 
 requirements:
   - line: Connaître Javascript
@@ -32,14 +32,14 @@ coach:
     email: igor@monkeypatch.io
     tech: Angular 2
   - name: Coacher cette équipe
-    img: unknown.jpg
-    description: 
-    email: 
+    img: unknown.png
+    description:
+    email:
     tech: React
-    - name: Coacher cette équipe
-    img: unknown.jpg
-    description: 
-    email: 
+  - name: Coacher cette équipe
+    img: unknown.png
+    description:
+    email:
     tech: Aurelia
 location:
   link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92457.01034624901!2d1.3628011207550794!3d43.60067857090314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1466773323580

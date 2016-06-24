@@ -60,7 +60,8 @@
                           <div class="blue-title">Avec le coaching de 2 experts:</div>
 
                         {% for c in post.coach %}
-                        <div class="col-sm-6 coach-card">
+                        {%assign cols = 12 | divided_by:post.coach.size %}
+                        <div class="col-sm-{{cols}} coach-card">
                           <div class="col-sm-5">
                             <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
                           </div>

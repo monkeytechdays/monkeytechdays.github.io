@@ -1,0 +1,22 @@
+@font-face {
+ font-family: 'Segoe UI Light';
+ src: url('./segoeuil.eot');
+ src: local('SEGOEUIL'), url('./segoeuil.woff') format('woff'), url('./segoeuil.ttf') format('truetype');
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+@font-face {
+	font-family: "Segoe UI Semilight";
+	src: local('SEGOEUISL'), url("./segoeuisl.otf") format('truetype');
+}
+
+@font-face {
+	font-family: "Segoe UI Semibold";
+	src: local('SEGOEUISB'), url("./seguisb.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Arial Narrow";
+	src: local('ARIALN'), url("./arial-narrow.ttf") format('truetype');
+}

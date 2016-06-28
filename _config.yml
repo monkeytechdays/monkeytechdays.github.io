@@ -24,7 +24,7 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 1AB2F5 #1AB2F5
+  primary: 00B0F0 #00B0F0
   primary-rgb: "255,255,255"
   secondary: 595959 #595959
   secondary-dark: 026ca6 #026ca6
@@ -38,8 +38,11 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: https://twitter.com/hashtag/MKTD?src=hash
+  - title: '#MKTD'
+    icon: twitter
+    url: https://twitter.com/hashtag/MKTD
+  - icon: linkedin
+    url: https://www.linkedin.com/company/monkeypatch-io
 
 # Contact info
 phone: '05 34 32 61 45'

@@ -29,6 +29,8 @@ a:active,
 a.active {
     outline: 0;
     color: #{{ site.color.primary }};
+    text-decoration: none !important;
+}
 }
 
 h1,
@@ -37,9 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
 }
 
 h4 {
@@ -112,7 +112,6 @@ header .container {
 
 header img {
     display: block;
-    margin: 0 auto 20px;
 }
 
 header .intro-text .name {
@@ -200,14 +199,9 @@ header .container {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 7rem 0 1rem 0;
     color: #fff;
     background: #{{ site.color.primary }};
-}
-
-section h2 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
 }
 
 section.success {
@@ -220,7 +214,9 @@ section.success {
     section h2 {
         font-size: 2.5rem;
     }
-
+    section h1 {
+        font-size: 3rem;
+    }
     section.first {
         padding-top: 75px;
     }
@@ -292,10 +288,7 @@ section.success {
     transition: all .3s ease-in-out;
 }
 
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
+a:not(:hover) .btn-outline {
     border: solid 2px #fff;
     color: #{{ site.color.primary }};
     background: #fff;
@@ -366,27 +359,57 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
-    background-color: #FFFFFF;
+    background-color: #{{ site.color.primary }};
+    color: #FFF;
 }
 
-footer .footer-col {
-    margin-bottom: 50px;
+footer img {
+  width: 150px;
+  padding: 2rem;
+}
+
+.footer-col {
+  padding: 1rem 0;
+}
+.footer-col .divider {
+  display: inline;
+  padding: 0 1rem;
+}
+.fa.fa-heart {
+  font-size: 1.2rem;
 }
 
 footer .footer-below {
     background-color: #{{ site.color.secondary-dark }};
     padding: 1rem;
+    position: relative;
+}
+
+.footer-above a,
+.footer-above a:hover {
+  font-size: 16px;
+  color: #FFF;
+  display: inline;
+}
+
+.footer-below a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer-above h4 {
+  display: inline;
+  padding-left: 1rem;
 }
 
 .btn-social {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    /*width: 50px;*/
+    /*height: 50px;*/
     border: 2px solid #{{ site.color.primary }};
     border-radius: 100%;
     text-align: center;
-    font-size: 32px !important;
+    font-size: 3rem !important;
     line-height: 45px;
 }
 
@@ -473,7 +496,7 @@ footer .footer-below {
 
 .white {
   background-color: #FFFFFF;
-  color: #000;
+  color: #777777;
 }
 
 .blue {
@@ -537,20 +560,6 @@ footer .footer-below {
   border-color: transparent;
 }
 
-.footer-above a,
-.footer-above a:hover {
-  color: #{{site.color.primary}} !important;
-  font-size: 16px;
-}
-
-.footer-above h4 {
-  color: #{{site.color.primary}};
-}
-
-.footer-above i {
-  font-size: 32px;
-}
-
 .requirements {
   padding: .5rem;
 }
@@ -607,18 +616,50 @@ section:last-child {
   .sub-title {
     font-size: 3rem !important;
   }
+  .title {
+    font-size: 5rem !important;
+  }
 }
 .sub-title {
   font-size: 2rem;
   padding-bottom: 1rem;
+  text-align: center;
+  font-family: Segoe UI Semilight, Open Sans Light;
 }
 
 #presentation p {
   text-align: justify;
+  font-family: Segoe UI Semilight, Open Sans Light;
 }
-#presentation title {
-  color: grey;
+#presentation h4 {
+  text-align: center;
+  font-family: Segoe UI Semilight, Open Sans Light;
 }
+#presentation .row:last-child {
+  padding-top: 2rem;
+}
+.title {
+  color: #{{site.color.primary}};
+  font-family: Arial Narrow, Arial;
+  display: flex;
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+.title::before, .title::after {
+  content: "";
+  border-top: 2px solid currentColor ;
+  position: relative;
+  top: .6em;
+  background-color: #fff;
+  flex: 1 0 auto;
+}
+.title::before {
+  margin-right: 2rem;
+}
+.title::after {
+  margin-left: 2rem;
+}
+
 #presentation iframe {
   width: 100%;
   height: 270px;
@@ -674,7 +715,6 @@ section:last-child {
 }
 .timeline h4 {
   margin: 0;
-  font-weight: normal;
   text-align: center;
 }
 .timeline h3 {
@@ -688,4 +728,69 @@ section:last-child {
 
 .location-card {
   padding-top: 3rem;
+}
+
+.banner {
+  position: relative;
+  margin-top: 5rem;
+  border: 1px solid #{{site.color.primary}};
+  text-align: center;
+  font-family: Arial Narrow, Arial;
+}
+.banner .header {
+  position: absolute;
+  text-align: center;
+  font-family: Arial Narrow, Arial;
+  top: -2rem;
+  width: 100%;
+  color: #{{site.color.primary}};
+}
+.banner .header h2 {
+  display: inline;
+  background-color: #FFF;
+  font-family: Arial Narrow, Arial;
+  padding: 0 2rem;
+}
+.banner .content {
+  color: #FFF;
+  margin: 4rem 4rem 0 4rem;
+  background-color: #{{site.color.primary}};
+  padding: 1rem;
+}
+.banner .top {
+  font-family: Segoe UI Semibold, Open Sans Light;
+  margin: 0;
+}
+.banner .bottom {
+  font-family: Segoe UI Light, Open Sans Light;
+  margin: 0;
+}
+.banner .footer {
+  padding-bottom: 2rem;
+  font-family: Segoe UI Light, Open Sans Light;
+  color: #{{site.color.primary}};
+}
+
+.round-img {
+  border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  height: 150px;
+  width: 150px;
+  margin: .5rem;
+}
+
+.perk {
+  text-align: center;
+  padding: 2rem 0 0;
+}
+.perk h4 {
+  position: relative;
+}
+.perk h4::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  margin: auto;
+  padding-top: 1rem;
+  border-bottom: 2px solid #{{site.color.primary}};
 }

@@ -4,52 +4,33 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                      <h4>{{ site.footer.shortlinks }}</h4>
-                      <p>
-                      {% for nav in site.navs %}
-                      <p class="page-scroll"><a href="#{{ nav.link }}">{{ nav.label }}</a> <br></p>
-                      {% endfor %}
-                      </p>
+                      <img src="img/logo/logo_line_small_white.png"/>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h4>{{ site.footer.contact }}</h4>
-                        <p><a href="mailto:{{site.email}}">{{site.email}}</a></p>
-                        <p><a href="tel:{{site.phone}}">{{site.phone}}</a></p>
-                        <p>
-                          <a href="{{ site.adresslink }}">
-                            {% for adr in site.adress %}
-                              {{ adr.line }} <br>
-		                        {% endfor %}
+                          <a href="{{ site.social[0].url }}" target="_blank">
+                            <i class="fa fa-fw fa-{{ site.social[0].icon }} btn-social btn-outline"></i>
+                            <h4>{{ site.social[0].title }}</h4>
                           </a>
-                        </p>
+                          <div class="divider">-</div>
+                          <a href="{{ site.social[1].url }}" target="_blank">
+                            <i class="fa fa-fw fa-{{ site.social[1].icon }} btn-social btn-outline"></i>
+                            <h4>{{ site.social[1].title }}</h4>
+                          </a>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h4>{{ site.footer.social }}</h4>
-                        <ul class="list-inline">
-                            {% for network in site.social %}
-                            <li>
-                                <a href="{{ network.url }}" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
-                            </li>
-		                    {% endfor %}
-                        </ul>
+                        <h5>Made with
+                          <i class="fa fa-fw fa-heart"></i>
+                          in Toulouse
+                        </h5>
+                        <p><a href="mailto:{{site.email}}">{{site.email}}</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
                         Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
-                    </div>
-                </div>
-            </div>
+                        <a class="btn" href="#page-top">
+                          <i class="fa fa-chevron-up"></i>
+                        </a>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>

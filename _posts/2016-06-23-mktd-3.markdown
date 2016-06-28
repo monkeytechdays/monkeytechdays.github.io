@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2017-01-10
-event: reactive-streams
+event: Reactive Streams
 img: reactive-streams.jpg
 header: reactive-streams.jpg
 alt: image-alt
@@ -10,5 +10,6 @@ project-date: January 2017
 client: Start Bootstrap
 category: Web Development
 title: Détails prochainement
-
+inscription:
+    link: http://www.meetup.com/Monkey-Tech-Days/events/232103376/
 ---

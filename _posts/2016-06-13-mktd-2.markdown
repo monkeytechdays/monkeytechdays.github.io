@@ -2,17 +2,19 @@
 layout: default
 modal-id: 2
 date: 2016-10-14
-event: angular-vs-react
+event: Angular vs React
 img: angular-vs-react.jpg
 header: angular-vs-react.jpg
 alt: image-alt
 project-date: October 2016
+start: 9h00
+end: 18h30
 client: Start Bootstrap
 category: Web Development
 title: Détails prochainement
-subtitle : évaluer les frameworks/librairies Js de 2016
+subtitle : Évaluer les frameworks/bibliothèques JS de 2016
 description:
-  - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la librairie React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia.
+  - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la bibliothèque React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia.
 
 requirements:
   - line: Connaître Javascript
@@ -62,5 +64,5 @@ info:
     - line: Apéro dînatoire & Bilan technique
       time: 18h30 - 19h30
 inscription:
-    link: http://www.meetup.com/fr-FR/Monkey-Tech-Days/events/232103075/
+    link: http://www.meetup.com/Monkey-Tech-Days/events/232103075/
 ---

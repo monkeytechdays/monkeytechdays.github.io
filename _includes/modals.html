@@ -73,7 +73,7 @@
                               {% endcase %}
                               {{ post.date | date: "%Y" }}
                             </h4>
-                            <div class="blue">9h00 - 18h30</div>
+                            <div class="blue">{{ post.start }} - {{ post.end }}</div>
                           </div>
                           {% for i in post.info %}
                           <div class="row">

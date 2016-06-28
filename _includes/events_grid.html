@@ -9,14 +9,63 @@
             </div>
             <div class="row">
                 {% for post in site.posts reversed %}
-                    <div class="col-sm-4 events-item">
+                    <div class="col-sm-6 col-md-4 events-item">
+
                         <a href="#eventsModal-{{ post.modal-id }}" class="events-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
+                            <div class="col-xs-8">
+                              <h3>{{ post.event }}</h3>
+                            </div>
+                            <div class="col-xs-4 events-time">
+                              <h5>
+                                {% assign dy = post.date | date: "%a" %}
+                                {% case dy %}
+                                {% when "Mon" %}Lundi
+                                {% when "Tue" %}Mardi
+                                {% when "Wed" %}Mercredi
+                                {% when "Thu" %}Jeudi
+                                {% when "Fri" %}Vendredi
+                                {% when "Sat" %}Samedi
+                                {% when "Sun" %}Dimanche
+                                {% else %}{{ dy }}
+                                {% endcase %}
+                              </h5>
+                              <h5>
+                                {{ post.date | date: "%-d" }}
+                                {% assign m = post.date | date: "%-m" %}
+                                {% case m %}
+                                {% when '1' %}Janvier
+                                {% when '2' %}Février
+                                {% when '3' %}Mars
+                                {% when '4' %}Avril
+                                {% when '5' %}Mai
+                                {% when '6' %}Juin
+                                {% when '7' %}Juillet
+                                {% when '8' %}Aout
+                                {% when '9' %}Septembre
+                                {% when '10' %}Octobre
+                                {% when '11' %}Novembre
+                                {% when '12' %}Decembre
+                                {% endcase %}
+                                {{ post.date | date: "%Y" }}
+                              </h5>
+                              <div class="blue">
+                                {% if post.start %}
+                                {{ post.start }} - {{ post.end }}
+                                {% else %}
+                                1 journée
+                                {% endif %}
+                              </div>
+                            </div>
                             <img src="img/events/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                        <a type="button" class="btn btn-danger" href="{{ post.inscription.link }}">
+                          S'inscrire
+                          <img src="img/logo/logo_meetup.png">
                         </a>
                     </div>
                 {% endfor %}

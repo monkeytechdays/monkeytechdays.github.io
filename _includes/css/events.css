@@ -2,7 +2,10 @@
     right: 0;
     margin: 3rem 0 15px;
 }
-
+#events .events-item > div {
+  max-width: 400px;
+  margin: 0 auto;
+}
 #events .events-item .events-link {
     display: block;
     position: relative;
@@ -62,6 +65,10 @@
 #events h3, .events-time h5 {
   text-transform: uppercase;
 }
+.events-time h5.date {
+  font-weight: 600;
+  font-size: 1.2rem !important;
+}
 .events-time {
   position: relative;
   padding: 0 .5rem;
@@ -78,17 +85,18 @@
 }
 #events .btn {
   display: flex;
-  align-items: baseline;
-  position: relative;
-  margin: 1rem 15%;
-  padding: .2rem;
-  width: 70%;
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
   border: 0;
   border-radius: 0;
-  border-bottom: 3px solid #D02626;
+  border-bottom: 3px solid #B91D1D;
 }
 #events .btn .label {
   flex: 2;
+  height: 28px;
+  font-size: 1.5rem;
+  padding: .8rem 0 0;
 }
 #events .btn .logo {
   flex: 1;
@@ -96,27 +104,66 @@
 }
 #events .btn img {
   width: 36px;
+  padding-top: 7px;
 }
 #events .btn .logo::after {
   content: "";
   position: absolute;
   left: 0;
-  height: 2rem;
+  top: 2px;
+  height: 2.5rem;
   border-radius: 50%;
-  border-left: 1px solid #D02626;
+  border-left: 1px solid #B91D1D;
 }
 #events .btn .logo::before {
   content: "";
   position: absolute;
   width: 36px;
-  top: -.7rem;
+  top: -5.5px;
   padding: 0.2em 0;
-  border-radius: 50%;
-  border-bottom: 5px solid #DE8880;
+  border-radius: 100%;
+  border-bottom: 6px solid #DE8880;
 }
 
 @media(min-width:767px) {
     #events .events-item {
         margin: 0 0 30px;
     }
+}
+
+.theme-proposal {
+  background: url("img/events/theme.jpg") no-repeat;
+  height: 10rem;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  background-size: contain;
+}
+.theme-proposal > a {
+  position: absolute;
+  bottom: 2rem;
+  border-bottom: 3px solid #485CA2 !important;
+}
+.sponsor-proposal {
+  background: url("img/events/sponsor.jpg") no-repeat;
+  height: 10rem;
+  position: relative;
+  background-size: contain;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.sponsor-proposal > a {
+  position: absolute;
+  bottom: 2rem;
+  border-bottom: 3px solid #AF6C19 !important;
+}
+.proposal-col {
+  margin-top: 1rem;
+}
+.proposal-col > h3 {
+  text-align: center;
+}
+h3 > div {
+  display: inline;
+  font-size: 2rem;
 }

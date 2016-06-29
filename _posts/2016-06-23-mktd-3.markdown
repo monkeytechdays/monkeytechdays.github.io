@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2017-01-10
-event: Reactive Streams
+event: <div>R</div>eactive <div>S</div>treams
 img: reactive-streams.jpg
 header: reactive-streams.jpg
 alt: image-alt

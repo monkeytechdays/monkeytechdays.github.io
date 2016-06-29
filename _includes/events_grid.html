@@ -10,7 +10,7 @@
             <div class="row">
                 {% for post in site.posts reversed %}
                     <div class="col-md-6 events-item">
-
+                      <div>
                         <a href="#eventsModal-{{ post.modal-id }}" class="events-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -34,7 +34,7 @@
                                 {% else %}{{ dy }}
                                 {% endcase %}
                               </h5>
-                              <h5>
+                              <h5 class="date">
                                 {{ post.date | date: "%-d" }}
                                 {% assign m = post.date | date: "%-m" %}
                                 {% case m %}
@@ -67,8 +67,25 @@
                           <div class="label">S'inscrire</div>
                           <div class="logo"><img src="img/logo/logo_meetup.png"></div>
                         </a>
+                      </div>
                     </div>
                 {% endfor %}
+                <div class="col-md-6 proposal-col">
+                  <h3><div>E</div>nvie d'éxperimenter <div>1</div> <div>T</div>echno ?</h3>
+                  <div class="theme-proposal">
+                    <a type="button" class="btn btn-primary" href="mailto:{{site.email}}?subject=Proposition d'un thème MonkeyTechDays" target="_blank">
+                      <div class="label">Proposer un thème !</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 proposal-col">
+                  <h3><div>E</div>nvie de <div>S</div>ponsoriser un <div>E</div>vent ?</h3>
+                  <div class="sponsor-proposal">
+                    <a type="button" class="btn btn-warning" href="mailto:{{site.email}}?subject=Devenir Sponsor MonkeyTechDays" target="_blank">
+                      <div class="label">Devenir Sponsor</div>
+                    </a>
+                  </div>
+                </div>
             </div>
         </div>
     </section>

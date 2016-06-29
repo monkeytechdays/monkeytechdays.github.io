@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2016-07-08
-event: Feign vs Retrofit
+event: <div>F</div>eign vs <div>R</div>etrofit
 img: feign-vs-retrofit.jpg
 header: modal/feign-vs-retrofit.jpg
 alt: image-alt

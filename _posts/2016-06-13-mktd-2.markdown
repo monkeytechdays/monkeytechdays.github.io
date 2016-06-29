@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2016-10-14
-event: Angular vs React
+event: <div>A</div>ngular vs <div>R</div>eact
 img: angular-vs-react.jpg
 header: angular-vs-react.jpg
 alt: image-alt

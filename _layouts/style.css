@@ -1,2 +1,6 @@
-{% include css/bootstrap.min.css %}
 {% include css/main.css %}
+{% include css/events.css %}
+{% include css/footer.css %}
+{% include css/modal.css %}
+{% include css/nav.css %}
+{% include css/presentation.css %}

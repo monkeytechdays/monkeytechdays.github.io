@@ -1,0 +1,105 @@
+@media(min-width:768px) {
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+}
+.navbar-fixed-top {
+  padding: 15px 0;
+  -webkit-transition: padding .3s;
+  -moz-transition: padding .3s;
+  transition: padding .3s;
+}
+.navbar-fixed-top.navbar-shrink {
+  background-image: none;
+  background-color: #{{site.color.primary}};
+  transition: all 1s ease-in-out;
+}
+
+.navbar-fixed-top.navbar-shrink .navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+.navbar-nav a {
+  padding: 1rem !important;
+  color: white !important;
+}
+.navbar-nav {
+  padding: 1rem;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar-nav>.active>a {
+    background-color: transparent !important;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.navbar > li > a:hover {
+  color: #{{ site.color.secondary-dark }};
+  border-bottom : 3px solid white;
+}
+
+.navbar-nav > li > a:focus {
+  color: #FFFFFF !important;
+}
+
+.navbar-toggle {
+  border: 0;
+}
+
+.navbar-toggle:focus,
+.scroll-top a:focus {
+  background-color: transparent !important;
+}
+
+.navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
+body > .navbar {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, .5) 20%);
+  transition: all .3s ease-in-out;
+}
+
+@media(min-width:768px) {
+  body > .navbar {
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, .3));
+  }
+}
+.navbar-brand {
+  width: 150px;
+  background: url('img/logo.png') no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+}
+.navbar-nav a:hover {
+  color: #FFF !important;
+  opacity: 0.5;
+}
+
+.icon-bar {
+  background-color: #FFF !important;
+}

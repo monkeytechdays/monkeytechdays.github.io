@@ -15,8 +15,10 @@ footer img {
   width: 200px;
   padding: 2rem;
 }
+@media(min-width:991px) {
 footer .social-links {
   padding: 3rem 0;
+}
 }
 .footer-col {
   padding: 1rem 0;
@@ -24,11 +26,14 @@ footer .social-links {
 @media(min-width:991px) {
 .footer-col:last-child::after {
   content: "";
-  right: 5rem;
+  right: 6rem;
   top: 3rem;
   height: 4rem;
   position: absolute;
   border-right: 2px solid #FFF;
+}
+.footer-col:first-child {
+  text-align: left;
 }
 }
 .footer-col:last-child {

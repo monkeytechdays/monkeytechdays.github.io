@@ -3,14 +3,12 @@
     margin: 3rem 0 15px;
 }
 #events .events-item > div {
-  max-width: 400px;
   margin: 0 auto;
 }
 #events .events-item .events-link {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
 }
 
 #events .events-item .events-link .caption {
@@ -131,34 +129,22 @@
     }
 }
 
-.theme-proposal {
-  background: url("img/events/theme.jpg") no-repeat;
-  height: 10rem;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  background-size: contain;
-}
-.theme-proposal > a {
+.theme.proposal-col a {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   border-bottom: 3px solid #485CA2 !important;
 }
-.sponsor-proposal {
-  background: url("img/events/sponsor.jpg") no-repeat;
-  height: 10rem;
-  position: relative;
-  background-size: contain;
-  max-width: 400px;
-  margin: 0 auto;
-}
-.sponsor-proposal > a {
+.sponsor.proposal-col  a {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   border-bottom: 3px solid #AF6C19 !important;
 }
 .proposal-col {
-  margin-top: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}
+.proposal-col > div {
+  position: relative;
 }
 .proposal-col > h3 {
   text-align: center;

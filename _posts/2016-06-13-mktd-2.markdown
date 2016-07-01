@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: event
 modal-id: 2
 date: 2016-10-14
 event: <div>A</div>ngular vs <div>R</div>eact
@@ -10,7 +10,7 @@ project-date: October 2016
 start: 9h00
 end: 18h30
 client: Start Bootstrap
-category: Web Development
+category: Events
 title: Journée rassemblant des TechAddicts pour
 subtitle : évaluer les frameworks/bibliothèques JS de 2016
 description:

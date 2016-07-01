@@ -36,25 +36,12 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$('div.modal').on('show.bs.modal', function() {
-	var modal = this;
-	var hash = modal.id;
-	window.location.hash = hash;
-	window.onhashchange = function() {
-		if (!location.hash){
-			$(modal).modal('hide');
-		}
-	}
-});
 
-$('div.modal').on('hide', function() {
-	var hash = this.id;
-	history.pushState('', document.title, window.location.pathname);
-});
+$(function() {
+    var createCSS = function(css) {
+      if (document.createStyleSheet) document.createStyleSheet(css);
+      else $("head").append($("<link rel='stylesheet' href='"+ css +"' type='text/css' media='screen' />"));
+    }
+    createCSS('https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:300,400,700|Pragati+Narrow');
 
-$(document).ready(function() {
-  var ref =  window.location.href.split('#')[1];
-  if(ref && ref.indexOf('eventsModal') != -1) {
-    $('#' + ref).modal('show');
-  }
 });

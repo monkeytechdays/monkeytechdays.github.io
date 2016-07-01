@@ -1,20 +1,19 @@
 <!-- events Modals -->
-{% for post in site.posts reversed  %}
-<div class="events-modal modal fade" id="eventsModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="events-modal" id="eventsModal-{{ page.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                   <div class="modal-header">
                     <a type="button" class="close" href="/" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                    <img src="img/events/{{ post.header }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                    <h4>{{post.title}}</h4>
-                    {% if post.subtitle %}
-                      <h3>{{post.subtitle}}</h3>
+                    <img src="/img/events/{{ page.header }}" class="img-responsive img-centered" alt="{{ page.alt }}">
+                    <h4>{{page.title}}</h4>
+                    {% if page.subtitle %}
+                      <h3>{{page.subtitle}}</h3>
                     {% endif %}
                     <!-- descriptions -->
-                    {% if post.description %}
-                      {% for d in post.description %}
+                    {% if page.description %}
+                      {% for d in page.description %}
                       <p>{{ d.line }}</p>
                     {% endfor %}
                   </div>
@@ -22,7 +21,7 @@
                     <div class="row">
                       <div class="col-lg-6 col-md-6">
                         <h4 class="blue-title">Au programme</h4>
-                        {% for p in post.program %}
+                        {% for p in page.program %}
                           <p>
                             <i class="fa fa-check" aria-hidden="true"></i>
                             <span class="requirements">{{p.line}}</span>
@@ -30,7 +29,7 @@
                         {% endfor %}
 
                         <div class="blue-title">Prérequis:</div>
-                        {% for r in post.requirements %}
+                        {% for r in page.requirements %}
                         <p>
                           <i class="fa fa-check" aria-hidden="true"></i>
                           <span class="requirements">{{ r.line }}</span>
@@ -42,7 +41,7 @@
                           <div class="col-sm-6 col-sm-offset-2">
                             <!-- Whitespace added for readability -->
                             <h4>
-                              {% assign dy = post.date | date: "%a" %}
+                              {% assign dy = page.date | date: "%a" %}
                               {% case dy %}
                                 {% when "Mon" %}Lundi
                                 {% when "Tue" %}Mardi
@@ -55,8 +54,8 @@
                               {% endcase %}
                             </h4>
                             <h4>
-                              {{ post.date | date: "%-d" }}
-                              {% assign m = post.date | date: "%-m" %}
+                              {{ page.date | date: "%-d" }}
+                              {% assign m = page.date | date: "%-m" %}
                               {% case m %}
                                 {% when '1' %}Janvier
                                 {% when '2' %}Février
@@ -71,11 +70,11 @@
                                 {% when '11' %}Novembre
                                 {% when '12' %}Decembre
                               {% endcase %}
-                              {{ post.date | date: "%Y" }}
+                              {{ page.date | date: "%Y" }}
                             </h4>
-                            <div class="blue">{{ post.start }} - {{ post.end }}</div>
+                            <div class="blue">{{ page.start }} - {{ page.end }}</div>
                           </div>
-                          {% for i in post.info %}
+                          {% for i in page.info %}
                           <div class="row">
                             <div class="col-sm-12">
                               <div class="col-sm-4 time">{{i.time}}</div>
@@ -84,17 +83,17 @@
                           </div>
                           {% endfor %}
                        </div>
-                      <a class="btn btn-default" href="{{post.inscription.link}}" target="_blank">S'inscrire</a>
+                      <a class="btn btn-default" href="{{page.inscription.link}}" target="_blank">S'inscrire</a>
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
                           <div class="blue-title">Avec le coaching de 2 experts:</div>
 
-                        {% for c in post.coach %}
-                        {%assign cols = 12 | divided_by:post.coach.size %}
+                        {% for c in page.coach %}
+                        {%assign cols = 12 | divided_by:page.coach.size %}
                         <div class="col-sm-{{cols}} coach-card">
                           <div class="col-sm-5">
-                            <img class="coach-img" src="img/coach/{{ c.img }}" class="img-responsive" alt="{{ post.alt }}">
+                            <img class="coach-img" src="/img/coach/{{ c.img }}" class="img-responsive" alt="{{ page.alt }}">
                           </div>
                           <div class="col-sm-7">
                             <p class="coach-name">{{c.name}}</p>
@@ -107,9 +106,9 @@
                         {% endfor %}
                       </div>
                         <div class="col-sm-12 location-card">
-                          <a class="blue-title" href="{{post.location.site}}" target="_blank">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de {{post.location.name}}:</a>
-                          <iframe frameborder="0" src="{{post.location.link}}" allowfullscreen></iframe>
+                          <a class="blue-title" href="{{page.location.site}}" target="_blank">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de {{page.location.name}}:</a>
+                          <iframe frameborder="0" src="{{page.location.link}}" allowfullscreen></iframe>
                         </div>
                       </div>
                       {% endif %}
@@ -119,4 +118,3 @@
             </div>
         </div>
     </div>
-{% endfor %}

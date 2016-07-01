@@ -11,7 +11,7 @@
                 {% for post in site.posts reversed %}
                     <div class="col-md-6 events-item">
                       <div>
-                        <a href="#eventsModal-{{ post.modal-id }}" class="events-link" data-toggle="modal">
+                        <a href="{{ post.url }}" class="events-link">
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>

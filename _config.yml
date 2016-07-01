@@ -1,11 +1,12 @@
 # Site settings
 title: MonkeyTechDays
 email: mktd@monkeypatch.io
-url: https://www.monkeytechdays.com
+url: http://www.monkeytechdays.com
 description: "MonkeyTechDays"
 skills: "Web Developer - Graphic Artist - User Experience Designer"
 meta_author: Bonobo
-
+gems:
+  - jekyll-sitemap
 # Google webmaster tools
 google_verify:
 
@@ -63,3 +64,12 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 markdown: kramdown
 permalink: pretty
 future: true
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  startings: [html, head, body]

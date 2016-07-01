@@ -10,6 +10,9 @@
     position: relative;
     margin: 0 auto;
 }
+#events .events-link > img {
+  width: 100%;
+}
 
 #events .events-item .events-link .caption {
     position: absolute;

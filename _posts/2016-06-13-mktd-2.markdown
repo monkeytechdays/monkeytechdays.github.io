@@ -3,16 +3,17 @@ layout: event
 modal-id: 2
 date: 2016-10-14
 event: <div>A</div>ngular vs <div>R</div>eact
-img: angular-vs-react.jpg
-header: angular-vs-react.jpg
+img: /img/events/angular-vs-react.jpg
+header: /img/events/angular-vs-react.jpg
 alt: image-alt
 project-date: October 2016
 start: 9h00
 end: 18h30
 client: Start Bootstrap
 category: Events
-title: Journée rassemblant des TechAddicts pour
-subtitle : évaluer les frameworks/bibliothèques JS de 2016
+title: Journée rassemblant des TechAddicts
+subtitle1: Journée rassemblant des TechAddicts pour
+subtitle2 : évaluer les frameworks/bibliothèques JS de 2016
 description:
   - line: Bientôt en version finale, Angular 2 est en train de devenir le framework à la mode pour 2016, mais attention, il est en concurrence féroce avec la bibliothèque React qui ne cesse de s'améliorer et le petit nouveau qu'est Aurelia.
 

@@ -3,16 +3,17 @@ layout: event
 modal-id: 1
 date: 2016-07-08
 event: <div>F</div>eign vs <div>R</div>etrofit
-img: feign-vs-retrofit.jpg
-header: modal/feign-vs-retrofit.jpg
+img: /img/events/feign-vs-retrofit.jpg
+header: /img/events/modal/feign-vs-retrofit.jpg
 alt: image-alt
 project-date: July 2016
 start: 9h00
 end: 18h30
 client: Start Bootstrap
 category: Events
-title: Journée rassemblant des TechAddicts pour
-subtitle : évaluer des clients REST Java modernes
+title: Journée rassemblant des TechAddicts
+subtitle1: Journée rassemblant des TechAddicts pour
+subtitle2 : évaluer des clients REST Java modernes
 description:
   - line: Dans le cadre des architectures microservices la consommation de services REST devient primordial, Feign de Netflix et Retrofit de Square sont deux solutions intéressantes. Coachés par 2 Experts, ce TechDay est destiné à la découverte et l'approfondissement de ces Bibliothèques.
 

@@ -156,3 +156,11 @@ h3 > div {
   display: inline;
   font-size: 2rem;
 }
+.title.dark {
+  color: #777;
+  font-size: 4rem !important;
+}
+.events-link .date.old {
+  text-align: right;
+  padding: 1rem 0;
+}

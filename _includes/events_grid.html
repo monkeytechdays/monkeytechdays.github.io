@@ -1,27 +1,27 @@
-
 <section id="events" class="white">
     <!-- events Grid Section -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                      <h1 class="title">Nos Rendez-Vous</h1>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="title">Nos Rendez-Vous</h1>
             </div>
-            <div class="row">
-                {% for post in site.posts reversed %}
-                    <div class="col-md-6 events-item">
-                      <div>
-                        <a href="{{ post.url }}" class="events-link">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
+        </div>
+        <div class="row">
+            {% for post in site.posts reversed %}
+            {% if post.date >= site.time %}
+            <div class="col-md-6 events-item">
+                <div>
+                    <a href="{{ post.url }}" class="events-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
                             </div>
-                            <div class="col-xs-8">
-                              <h3>{{ post.event }}</h3>
-                            </div>
-                            <div class="col-xs-4 events-time">
-                              <h5>
+                        </div>
+                        <div class="col-xs-8">
+                            <h3>{{ post.event }}</h3>
+                        </div>
+                        <div class="col-xs-4 events-time">
+                            <h5>
                                 {% assign dy = post.date | date: "%a" %}
                                 {% case dy %}
                                 {% when "Mon" %}Lundi
@@ -34,7 +34,7 @@
                                 {% else %}{{ dy }}
                                 {% endcase %}
                               </h5>
-                              <h5 class="date">
+                            <h5 class="date">
                                 {{ post.date | date: "%-d" }}
                                 {% assign m = post.date | date: "%-m" %}
                                 {% case m %}
@@ -53,41 +53,82 @@
                                 {% endcase %}
                                 {{ post.date | date: "%Y" }}
                               </h5>
-                              <div class="blue">
-                                {% if post.start %}
-                                {{ post.start }} - {{ post.end }}
-                                {% else %}
-                                1 journée
-                                {% endif %}
-                              </div>
+                            <div class="blue">
+                                {% if post.start %} {{ post.start }} - {{ post.end }} {% else %} 1 journée {% endif %}
                             </div>
-                            <img src="{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        </a>
-                        <a type="button" class="btn btn-danger" href="{{ post.inscription.link }}" target="_blank">
-                          <div class="label">S'inscrire</div>
-                          <div class="logo"><img src="img/logo/logo_meetup.png"></div>
-                        </a>
-                      </div>
-                    </div>
-                {% endfor %}
-                <div class="col-md-6 proposal-col theme">
-                  <div>
-                  <h3><div>E</div>nvie d'éxperimenter <div>1</div> <div>T</div>echno ?</h3>
-                  <img src="img/events/theme.jpg" class="img-responsive"/>
-                  <a type="button" class="btn btn-primary" href="mailto:{{site.email}}?subject=Proposition d'un thème MonkeyTechDays" target="_blank">
-                    <div class="label">Proposer un thème !</div>
-                  </a>
+                        </div>
+                        <img src="{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                    </a>
+                    <a type="button" class="btn btn-danger" href="{{ post.inscription.link }}" target="_blank">
+                        <div class="label">S'inscrire</div>
+                        <div class="logo"><img src="img/logo/logo_meetup.png"></div>
+                    </a>
                 </div>
+            </div>
+            {% endif %}
+
+            {% endfor %}
+            <div class="col-md-6 proposal-col theme">
+                <div>
+                    <h3><div>E</div>nvie d'éxperimenter <div>1</div> <div>T</div>echno ?</h3>
+                    <img src="img/events/theme.jpg" class="img-responsive" />
+                    <a type="button" class="btn btn-primary" href="mailto:{{site.email}}?subject=Proposition d'un thème MonkeyTechDays" target="_blank">
+                        <div class="label">Proposer un thème !</div>
+                    </a>
                 </div>
-                <div class="col-md-6 proposal-col sponsor">
-                  <div>
-                  <h3><div>E</div>nvie de <div>S</div>ponsoriser un <div>E</div>vent ?</h3>
-                  <img src="img/events/sponsor.jpg" class="img-responsive"/>
-                  <a type="button" class="btn btn-warning" href="mailto:{{site.email}}?subject=Devenir Sponsor MonkeyTechDays" target="_blank">
-                    <div class="label">Devenir Sponsor</div>
-                  </a>
+            </div>
+            <div class="col-md-6 proposal-col sponsor">
+                <div>
+                    <h3><div>E</div>nvie de <div>S</div>ponsoriser un <div>E</div>vent ?</h3>
+                    <img src="img/events/sponsor.jpg" class="img-responsive" />
+                    <a type="button" class="btn btn-warning" href="mailto:{{site.email}}?subject=Devenir Sponsor MonkeyTechDays" target="_blank">
+                        <div class="label">Devenir Sponsor</div>
+                    </a>
                 </div>
-              </div>
+            </div>
+
+        </div>
+            {% for post in site.posts reversed %}
+            {% if post.date < site.time %}
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="title dark">Précédents Rendez-Vous</h1>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-3 events-item">
+                <div>
+                    <a href="{{ post.url }}" class="events-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <img src="{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        <h5 class="date old">
+                          {% assign m = post.date | date: "%-m" %}
+                          {% case m %}
+                          {% when '1' %}Janvier
+                          {% when '2' %}Février
+                          {% when '3' %}Mars
+                          {% when '4' %}Avril
+                          {% when '5' %}Mai
+                          {% when '6' %}Juin
+                          {% when '7' %}Juillet
+                          {% when '8' %}Aout
+                          {% when '9' %}Septembre
+                          {% when '10' %}Octobre
+                          {% when '11' %}Novembre
+                          {% when '12' %}Decembre
+                          {% endcase %}
+                          {{ post.date | date: "%Y" }}
+                        </h5>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+            {% endif %}
+            {% endfor %}
+    </div>
+</section>

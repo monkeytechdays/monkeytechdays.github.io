@@ -2,9 +2,9 @@
 layout: event
 modal-id: 2
 date: 2016-10-14
-event: <div>A</div>ngular vs <div>R</div>eact
-img: /img/events/angular-vs-react.jpg
-header: /img/events/angular-vs-react.jpg
+event: <div>A</div>ngular, <div>R</div>eact, <div>A</div>urelia
+img: /img/events/angular-react.jpg
+header: /img/events/angular-react.jpg
 alt: image-alt
 project-date: October 2016
 start: 9h00

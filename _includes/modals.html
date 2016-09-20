@@ -101,6 +101,33 @@
                                 </div>
                                 {% endfor %}
                             </div>
+                            <div class="col-lg-12">
+                            {% if page.community %}
+                                <div class="col-sm-6 coach-card">
+                                  <div class="blue-title">Communautés Impliquées:</div>
+                                  {% for c in page.community %}
+                                  <div class="row">
+                                    <a href="{{ c.site }}">
+                                      <img class="sponsor-img" src="{{ c.logo }}" class="img-responsive">
+                                    </a>
+                                  </div>
+                                  {% endfor %}
+                                </div>
+                            {% endif %}
+                            {% if page.sponsor %}
+                                <div class="col-sm-6 coach-card">
+                                  <div class="blue-title">Les Sponsors:</div>
+                                  {% for s in page.sponsor %}
+                                  <div class="row">
+                                        <a href="{{ s.site }}">
+                                          <img class="sponsor-img" src="{{ s.logo }}" class="img-responsive">
+                                        </a>
+                                  </div>
+                                  {% endfor %}
+                                </div>
+                            {% endif %}
+                          </div>
+
                             <div class="col-sm-12 location-card">
                                 <a class="blue-title" href="{{page.location.site}}" target="_blank">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Dans les locaux de {{page.location.name}}:</a>

@@ -225,15 +225,18 @@ form .row:first-child .floating-label-form-group {
 
 .coach-card {
   margin-top: 3rem;
+  padding-left: 0;
 }
 .coach-card h5 {
   margin: 0;
 }
 .coach-img {
-  width: 100px;
-  margin-right: 1rem;
   border-radius: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.coach-img, .sponsor-img {
+  width: 100px;
+  margin-right: 1rem;
 }
 
 .coach-name {

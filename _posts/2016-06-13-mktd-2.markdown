@@ -39,10 +39,10 @@ coach:
     description: Passionné du web et des interfaces faîtes pour les utilisateurs.
     email: julien@occitech.fr
     tech: React
-  - name: Coacher cette équipe
-    img: unknown.png
-    description:
-    email:
+  - name: Hadrien Lanneau
+    img: hadrien.jpg
+    description: Architecte front-end, développeur fullstack amoureux de Javascript, 10 ans d'âge.
+    email: hadrien@lanneau.me
     tech: Aurelia
 community:
   - logo: http://toulousejs.francejs.org/img/toulousejs.png

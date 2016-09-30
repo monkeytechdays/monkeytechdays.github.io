@@ -234,8 +234,14 @@ form .row:first-child .floating-label-form-group {
   border-radius: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
-.coach-img, .sponsor-img {
+.coach-img{
   width: 100px;
+  margin-right: 1rem;
+}
+
+.sponsor-img {
+  max-height: 80px;
+  max-width: 150px;
   margin-right: 1rem;
 }
 

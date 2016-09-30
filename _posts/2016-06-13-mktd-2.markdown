@@ -48,7 +48,7 @@ community:
   - logo: /img/logo/logo-toulousejs.jpg
     site: http://toulousejs.francejs.org
 sponsor:
-  - logo: /img/logo/logo-occitech.jpg
+  - logo: /img/logo/logo-occitech.png
     site: https://www.occitech.fr/
 
 location:

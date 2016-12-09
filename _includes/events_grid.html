@@ -88,47 +88,54 @@
             </div>
 
         </div>
-            {% for post in site.posts reversed %}
-            {% if post.date < site.time %}
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="title dark">Précédents Rendez-Vous</h1>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-md-3 events-item">
-                <div>
-                    <a href="{{ post.url }}" class="events-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
 
-                        <img src="{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        <h5 class="date old">
-                          {% assign m = post.date | date: "%-m" %}
-                          {% case m %}
-                          {% when '1' %}Janvier
-                          {% when '2' %}Février
-                          {% when '3' %}Mars
-                          {% when '4' %}Avril
-                          {% when '5' %}Mai
-                          {% when '6' %}Juin
-                          {% when '7' %}Juillet
-                          {% when '8' %}Aout
-                          {% when '9' %}Septembre
-                          {% when '10' %}Octobre
-                          {% when '11' %}Novembre
-                          {% when '12' %}Decembre
-                          {% endcase %}
-                          {{ post.date | date: "%Y" }}
-                        </h5>
-                    </a>
-                </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="title dark">Précédents Rendez-Vous</h1>
             </div>
         </div>
-            {% endif %}
-            {% endfor %}
+
+          {% assign curDate = site.time | date: '%s' %}
+          {% assign count = 0 %}
+          {% for post in site.posts  %}
+          {% if post.date < site.time %}
+          {% assign idx = count | modulo: 3 %}
+
+          {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+          {% if idx == 1 %}<div class="row">{% endif %}
+          <div class="col-md-3 events-item">
+              <div>
+                  <a href="{{ post.url }}" class="events-link">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+
+                      <img src="{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                      <h5 class="date old">
+                        {% assign m = post.date | date: "%-m" %}
+                        {% case m %}
+                        {% when '1' %}Janvier
+                        {% when '2' %}Février
+                        {% when '3' %}Mars
+                        {% when '4' %}Avril
+                        {% when '5' %}Mai
+                        {% when '6' %}Juin
+                        {% when '7' %}Juillet
+                        {% when '8' %}Aout
+                        {% when '9' %}Septembre
+                        {% when '10' %}Octobre
+                        {% when '11' %}Novembre
+                        {% when '12' %}Decembre
+                        {% endcase %}
+                        {{ post.date | date: "%Y" }}
+                      </h5>
+                  </a>
+              </div>
+          </div>
+          {% if idx == 1 %}<div class="row">{% endif %}
+          {% endif %}
+          {% endfor %}
     </div>
 </section>

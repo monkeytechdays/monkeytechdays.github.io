@@ -84,7 +84,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="blue-title">Avec le coaching de {{ page.coach.size }} experts:</div>
+                                <div class="blue-title">Avec le coaching de {{ page.coach.size }} {%if page.coach.size>1%}experts{% else%}expert {% endif%}:</div>
 
                                 {% for c in page.coach %} {%assign cols = 12 | divided_by:page.coach.size %}
                                 <div class="col-sm-{{cols}} coach-card">
@@ -93,8 +93,10 @@
                                     </div>
                                     <div class="col-sm-7">
                                         <p class="coach-name">{{c.name}}</p>
-                                        <h5 class="blue">Équipe</h5>
-                                        <h5 class="blue">{{c.tech}}</h5>
+                                          {% if c.tech %}
+                                            <h5 class="blue">Équipe</h5>
+                                            <h5 class="blue">{{c.tech}}</h5>
+                                          {% endif %}
                                         <p>{{c.description}}</p>
                                         <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
                                     </div>

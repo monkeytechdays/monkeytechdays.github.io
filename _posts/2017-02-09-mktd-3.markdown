@@ -1,0 +1,56 @@
+---
+layout: event
+modal-id: 3
+date: 2017-02-09
+event: <div>R</div>eactive <div>S</div>treams
+img: /img/events/reactive-streams.jpg
+header: /img/events/reactive-streams.jpg
+alt: image-alt
+project-date: February 2017
+start: 9h00
+end: 18h30
+client: Start Bootstrap
+category: Events
+title: Journée rassemblant des TechAddicts
+subtitle1: Journée rassemblant des TechAddicts pour
+subtitle2 : expérimenter le ReactiveStreams et échanger avec un expert de Pivotal
+description:
+  - line: La Programmation Réactive est en train de devenir la grosse tendance côté programmation. Plusieurs librairies existent déjà (RxJava, Reactor,..) mais cette façon de programmer bien que très élégante est assez complexe au premier abord.
+requirements:
+  - line: Venir si possible avec son PC
+  - line: Git et IDE installés
+
+program:
+  - line: Expérimenter les réactives streams via des exemples pertinents
+  - line: Échanger avec la Communauté Toulousaine
+  - line: Faire un bilan technique sur cette Techno
+
+coach:
+  - name: Sébastien Deleuze
+    img: sdeleuze.jpg
+    description: Spring engineering team member at Pivotal
+community:
+  - logo: /img/logo/toulousejug.png
+    site: http://www.toulousejug.org/
+location:
+  link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.2108114431708!2d1.4394906157111187!3d43.60215206374777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6258220a07%3A0xf1d45637938f3453!2sHarryCow!5e0!3m2!1sfr!2sfr!4v1466094946954
+  site: http://www.harrycow.com/
+  name: Harry Cow
+info:
+    - line: Accueil des participant(e)s
+      time: 9h00 - 9h15
+    - line: Présentation du programme
+      time: 9h15 - 9h30
+    - line: Petit Déj., Constitution des équipes
+      time: 9h30 - 9h45
+    - line: 3 à 4 défis techniques
+      time: 9h45 - 12h30
+    - line: Pause Déjeuner
+      time: 12h30 - 13h30
+    - line: 3 à 4 autres défis techniques
+      time: 13h30 - 18h30
+    - line: Apéro dînatoire & Bilan technique
+      time: 18h30 - 19h30  
+inscription:
+    link: http://www.meetup.com/Monkey-Tech-Days/events/232103376/
+---

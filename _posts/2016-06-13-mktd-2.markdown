@@ -23,10 +23,10 @@ requirements:
   - line: Git et IDE installés
 
 program:
-  - line: Experimenter React, Angular 2 ou Aurelia en Équipe
-  - line: Réaliser des Défis Téchniques
+  - line: Expérimenter React, Angular 2 ou Aurelia en Équipe
+  - line: Réaliser des Défis Techniques
   - line: Échanger avec la Communauté Toulousaine
-  - line: Evaluer les Technos
+  - line: Évaluer les Technos
 
 coach:
   - name: Igor Laborie

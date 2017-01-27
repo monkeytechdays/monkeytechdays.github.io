@@ -33,7 +33,7 @@ coach:
     tech: Swift
   - name: Emmanuel Vinas
     img: emmanuel.jpg
-    description: Expert Java et Mobile de 10 ans d'Exp.
+    description: Expert Java et Mobile
     twitter: EmmanuelVinas
     tech: Kotlin
 community:

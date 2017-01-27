@@ -28,12 +28,13 @@ program:
 coach:
   - name: Didier Plaindoux
     img: didier.jpg
-    description: type Self = ComputerScientist[Freelance]
+    description: Artisan logiciel
+    twitter: dplaindoux
     tech: Swift
   - name: Emmanuel Vinas
     img: emmanuel.jpg
     description: Expert Java et Mobile de 10 ans d'Exp.
-    email: emmanuel@monkeypatch.io
+    twitter: EmmanuelVinas
     tech: Kotlin
 community:
   - logo: /img/logo/gdgtoulouse.png

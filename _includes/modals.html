@@ -98,7 +98,14 @@
                                             <h5 class="blue">{{c.tech}}</h5>
                                           {% endif %}
                                         <p>{{c.description}}</p>
-                                        <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
+                                        {% if c.twitter %}
+                                          <p><a href="mailto:{{c.twitter}}">https://twitter.com/{{c.twitter}}</a></p>
+                                        {% else %}
+                                          {% if c.email %}
+                                          <p><a href="mailto:{{c.email}}">{{c.email}}</a></p>
+                                          {% endif %}
+                                        {% endif %}
+
                                     </div>
                                 </div>
                                 {% endfor %}

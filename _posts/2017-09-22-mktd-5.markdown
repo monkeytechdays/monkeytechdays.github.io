@@ -1,12 +1,12 @@
 ---
 layout: event
 modal-id: 3
-date: 2017-9-22
+date: 2017-10-24
 event: <div>G</div>o vs <div>R</div>ust
 img: /img/events/go-vs-rust.jpg
 header: /img/events/go-vs-rust.jpg
 alt: image-alt
-project-date: September 2017
+project-date: November 2017
 start: 9h00
 end: 18h30
 client: Start Bootstrap

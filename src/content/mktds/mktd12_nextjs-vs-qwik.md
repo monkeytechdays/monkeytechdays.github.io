@@ -1,5 +1,5 @@
 ---
-date: 2024-04-08
+date: 2024-03-08
 name: NextJS vs Qwik
 thumbnail: mktd12_thumbnail.jpg
 subtitle: Explore Jamstack

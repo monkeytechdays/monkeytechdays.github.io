@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+import Logo from "../logo.png";
+import { ButtonWithMovingBorderEffect } from "./ButtonWithMovingBorderEffect";
+
+type Props = CollectionEntry<"mktds">;
+
+const mktd = Astro.props;
+
+const eventImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/events/*.{jpeg,jpg,png,gif,svg}",
+);
+const mktdImgSrc = eventImages[`/src/assets/events/${mktd.data.thumbnail}`];
+const formattedDate = mktd.data.date.toLocaleDateString("fr-FR", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const date = mktd.data.date.toISOString().split("T")[0];
+const mktdIsUpcoming = mktd.data.date > new Date();
+---
+
+<section class="bg-main-900 text-white">
+  <div class="absolute left-4 top-4">
+    <a href="/" aria-label="Accueil"
+      ><Image
+        src={Logo}
+        alt="Logo MonkeyTechDays"
+        width={150}
+        loading="eager"
+      /></a
+    >
+  </div>
+  <div
+    class="container m-auto flex flex-wrap items-center justify-around gap-4 px-4 py-8"
+  >
+    <div class="grid grid-rows-[1fr_auto_1fr]">
+      <div class="row-start-2">
+        <time datetime={date}>{formattedDate}</time>
+        <h1 class="text-4xl font-bold">{mktd.data.name}</h1>
+        <p class="text-xl first-letter:uppercase">{mktd.data.subtitle}</p>
+      </div>
+      {
+        mktdIsUpcoming && (
+          <div class="row-start-3 mt-6 justify-self-start">
+            <ButtonWithMovingBorderEffect
+              client:idle
+              rel="noopener"
+              href={mktd.data.inscriptionLink}
+            >
+              S'inscrire
+            </ButtonWithMovingBorderEffect>
+          </div>
+        )
+      }
+    </div>
+    <Image
+      src={mktdImgSrc()}
+      alt=""
+      width={500}
+      class="rounded-br-xl rounded-tl-xl"
+      loading="eager"
+    />
+  </div>
+</section>

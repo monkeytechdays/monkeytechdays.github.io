@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  type: "mktd";
+  img: string;
+  slug: string;
+  name: string;
+  size?: "small" | "large";
+}
+
+const { img, slug, name, type, size = "small" } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/events/*.{jpeg,jpg,png,gif}",
+);
+const imgSrc = images[`/src/assets/events/${img}`];
+---
+
+<a href={`${type}/${slug}`} class="block aspect-video">
+  <Image
+    src={imgSrc()}
+    loading="lazy"
+    alt={name}
+    class="h-full w-full rounded-sm object-cover"
+    width={size === "small" ? 300 : 400}
+  />
+</a>

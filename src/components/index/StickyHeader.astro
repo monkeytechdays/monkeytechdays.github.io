@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../logo.png";
+---
+
+<nav
+  id="sticky-header"
+  class="fixed left-0 right-0 top-0 z-20 transition-[background-color]"
+>
+  <div
+    class="container m-auto flex items-center justify-between px-4 py-3 text-white"
+  >
+    <a href="/" aria-label="Accueil"
+      ><Image
+        src={Logo}
+        alt="Logo MonkeyTechDays"
+        width={150}
+        loading="eager"
+      /></a
+    >
+    <a
+      rel="noopener"
+      href="http://www.meetup.com/fr-FR/Monkey-Tech-Days/"
+      class="rounded-lg border border-white px-2 py-1 hover:opacity-70"
+      >S'inscrire</a
+    >
+  </div>
+</nav>
+
+<script>
+  const header = document.querySelector("#sticky-header")!;
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      header.classList.add("bg-main-900");
+    } else {
+      header.classList.remove("bg-main-900");
+    }
+  });
+</script>

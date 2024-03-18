@@ -1,0 +1,42 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import Coachs from "../../components/mktd/Coachs.astro";
+import Hero from "../../components/mktd/Hero.astro";
+import Infos from "../../components/mktd/Infos.astro";
+import Location from "../../components/mktd/Location.astro";
+import Planning from "../../components/mktd/Planning.astro";
+
+export async function getStaticPaths() {
+  const mktds = await getCollection("mktds");
+  return mktds.map((mktd) => ({
+    params: { slug: mktd.slug },
+    props: mktd,
+  }));
+}
+
+type Props = CollectionEntry<"mktds">;
+
+const mktd = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <BaseHead
+      title={mktd.data.name}
+      description={mktd.data.description.join(" ")}
+      image={mktd.data.thumbnail}
+    />
+  </head>
+  <body class="flex h-[100dvh] flex-col text-[#777777]">
+    <main class="flex-1">
+      <Hero {...mktd} />
+      <Infos {...mktd} />
+      <Planning {...mktd} />
+      <Coachs {...mktd} />
+      <Location {...mktd} />
+    </main>
+    <Footer />
+  </body>
+</html>

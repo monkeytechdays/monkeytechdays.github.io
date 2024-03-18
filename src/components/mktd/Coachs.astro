@@ -1,0 +1,99 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"mktds">;
+
+const mktd = Astro.props;
+
+const coachImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/coachs/*.{jpeg,jpg,png,gif}",
+);
+
+const logoImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/logos/*.{jpeg,jpg,png,gif}",
+);
+---
+
+<section>
+  <div class="container m-auto grid gap-4 px-4 py-8">
+    <div>
+      <h2 class="mb-4 text-center text-4xl font-bold text-main-900">
+        Coach{mktd.data.coachs.length > 1 && "es"}
+      </h2>
+      <ul class="flex flex-wrap justify-around gap-6 text-lg">
+        {
+          mktd.data.coachs.map((coach) => (
+            <li class="flex items-center gap-4 rounded-full bg-white p-2 shadow-md">
+              <Image
+                src={coachImages[`/src/assets/coachs/${coach.img}`]()}
+                alt=""
+                class="rounded-full"
+                loading="lazy"
+                width={80}
+              />
+              <div>
+                <div>
+                  <span class="font-bold">{coach.name}</span>
+                  {coach.twitter && (
+                    <>
+                      {" "}
+                      <a class="text-main-500" href="/">
+                        (@{coach.twitter})
+                      </a>
+                    </>
+                  )}
+                </div>
+                <div>{coach.description}</div>
+                {coach.tech && <div>Equipe {coach.tech}</div>}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    {
+      mktd.data.community && (
+        <div>
+          <h2 class="mb-4 mt-2 text-center text-4xl font-bold text-main-900">
+            Communauté{mktd.data.community.length > 1 && "s"}{" "}
+            {"impliquée" + (mktd.data.community.length > 1 ? "s" : "")}
+          </h2>
+          <div class="flex flex-wrap justify-center gap-4">
+            {mktd.data.community.map((community) => (
+              <a rel="noopener" target="_blank" href={community.url}>
+                <Image
+                  src={logoImages[`/src/assets/logos/${community.logo}`]()}
+                  alt={community.name}
+                  width={200}
+                  loading="lazy"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+    {
+      mktd.data.sponsor && (
+        <div>
+          <h2 class="mb-4 mt-2 text-center text-4xl font-bold text-main-900">
+            Sponsor{mktd.data.sponsor.length > 1 && "s"}
+          </h2>
+          <div class="flex flex-wrap justify-center gap-4">
+            {mktd.data.sponsor.map((sponsor) => (
+              <a rel="noopener" target="_blank" href={sponsor.url}>
+                <Image
+                  src={logoImages[`/src/assets/logos/${sponsor.logo}`]()}
+                  alt={sponsor.name}
+                  width={200}
+                  loading="lazy"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</section>

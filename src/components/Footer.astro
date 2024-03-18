@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import Logo from "./logo_line_small_white.png";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-1">
+  <div class="bg-main-800 p-6 text-white">
+    <div
+      class="container m-auto grid auto-cols-fr grid-flow-col gap-4 px-4 max-sm:grid-flow-row"
+    >
+      <div class="max-sm:justify-self-center">
+        <Image src={Logo} alt="Logo MonkeyTechDays" width={200} />
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <a rel="noopener" href="https://twitter.com/hashtag/MKTD" aria-label="X"
+          ><Icon name="x" /></a
+        >
+        <a
+          rel="noopener"
+          href="https://www.linkedin.com/company/monkeypatch-io"
+          aria-label="LinkedIn"><Icon name="linkedIn" /></a
+        >
+        <a
+          rel="noopener"
+          href="http://www.meetup.com/fr-FR/Monkey-Tech-Days/"
+          aria-label="Meetup"><Icon name="meetup" /></a
+        >
+      </div>
+      <div class="sm:justify-self-end">
+        <div class="flex flex-col items-center">
+          <div>Made with ♥ in Toulouse</div><a
+            href="mailto:mktd@monkeypatch.io">mktd@monkeypatch.io</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid place-content-center bg-main-950 p-1 text-white">
+    Copyright © {currentYear} MonkeyPatch
+  </div>
+</footer>

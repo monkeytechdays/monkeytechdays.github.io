@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import EventCard from "./EventCard.astro";
+
+const events = (await getCollection("mktds"))
+  .toSorted((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .filter((evt) => evt.data.date < new Date());
+---
+
+<section class="my-5">
+  <h1 class="my-2 text-center text-4xl font-bold text-main-900">
+    Précédents Rendez-Vous
+  </h1>
+  <div class="mt-4 flex flex-wrap justify-center gap-6">
+    {
+      events.map((evt) => (
+        <EventCard
+          img={evt.data.thumbnail}
+          slug={evt.slug}
+          name={evt.data.name}
+          type="mktd"
+        />
+      ))
+    }
+  </div>
+</section>

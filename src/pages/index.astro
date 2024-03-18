@@ -1,16 +1,30 @@
 ---
-
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import About from "../components/index/About.astro";
+import Free from "../components/index/Free.astro";
+import Hero from "../components/index/Hero.astro";
+import PreviousSessions from "../components/index/PreviousSessions.astro";
+import StickyHeader from "../components/index/StickyHeader.astro";
+import UpcomingSessions from "../components/index/UpcomingSessions.astro";
+import { SITE_DESCRIPTION } from "../consts";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="fr">
+  <head>
+    <BaseHead description={SITE_DESCRIPTION} />
+  </head>
+  <body class="flex h-[100dvh] flex-col text-[#777777]">
+    <header>
+      <StickyHeader />
+      <Hero />
+    </header>
+    <main class="container m-auto px-4">
+      <UpcomingSessions />
+      <About />
+      <Free />
+      <PreviousSessions />
+    </main>
+    <Footer />
+  </body>
 </html>

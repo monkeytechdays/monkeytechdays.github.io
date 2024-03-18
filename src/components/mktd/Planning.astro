@@ -1,0 +1,49 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { parse } from "date-fns";
+
+type Props = CollectionEntry<"mktds">;
+
+const mktd = Astro.props;
+
+const startTime = mktd.data.planning[0].start;
+const endTime = mktd.data.planning.at(-1)!.end;
+---
+
+<section class="bg-main-900 text-white">
+  <div class="container m-auto gap-2 px-4 py-8">
+    <div class="">
+      <h2 class="mb-4 text-center text-4xl font-bold">Planning</h2>
+      <p class="text-center font-bold">
+        <time
+          datetime={parse(startTime, "HH'h'mm", mktd.data.date).toISOString()}
+          >{startTime}</time
+        > - <time
+          datetime={parse(endTime, "HH'h'mm", mktd.data.date).toISOString()}
+          >{endTime}</time
+        >
+      </p>
+      <ul
+        class="mt-4 grid grid-cols-[1fr_auto_1fr] gap-y-2 text-lg max-md:grid-cols-[max-content_auto_auto]"
+      >
+        {
+          mktd.data.planning.map((item, idx) => (
+            <li
+              class="col-span-full grid grid-cols-subgrid gap-4"
+              style={{ gridRow: idx + 1 }}
+            >
+              <div class="text-end">
+                <time>{item.start}</time> - <time>{item.end}</time>
+              </div>
+              <div>
+                {item.labels
+                  ? item.labels.map((label) => <div>{label}</div>)
+                  : item.label}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+---
+import { type CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"mktds">;
+
+const mktd = Astro.props;
+---
+
+<section>
+  <div class="container m-auto gap-2 px-4 pb-8">
+    <div>
+      <h2 class="mb-4 text-center text-4xl font-bold text-main-900">
+        Dans les locaux de <a
+          class="underline"
+          target="_blank"
+          href={mktd.data.location.url}>{mktd.data.location.name}</a
+        >
+      </h2>
+      <div>
+        <div class="h-96 w-full">
+          <iframe
+            title="Carte"
+            class="h-full w-full"
+            src={mktd.data.location.iframe}
+            allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

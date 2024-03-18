@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import SponsorImg from "../../assets/sponsor.jpg";
+import ThemeImg from "../../assets/theme.jpg";
+import EventCard from "./EventCard.astro";
+import { GlowingEffect } from "./GlowingEffect";
+
+const events = (await getCollection("mktds"))
+  .toSorted((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .filter((evt) => evt.data.date > new Date());
+---
+
+<section class="my-5">
+  <h1 class="my-2 text-center text-4xl font-bold text-main-900">
+    Nos Rendez-Vous
+  </h1>
+  {
+    events.length > 0 && (
+      <div class="m-4 flex flex-wrap justify-center gap-6">
+        {events.map((evt) => (
+          <GlowingEffect client:idle>
+            <EventCard
+              img={evt.data.thumbnail}
+              slug={evt.slug}
+              name={evt.data.name}
+              type="mktd"
+              size="large"
+            />
+          </GlowingEffect>
+        ))}
+      </div>
+    )
+  }
+  <div class="flex flex-wrap justify-around gap-2">
+    <div class="space-y-1">
+      <h2 class="text-xl">Envie d'expérimenter une techno ?</h2>
+      <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+        <a
+          rel="noopener"
+          href="https://github.com/monkeytechdays/cfp/issues/new"
+          class="z-10 mb-2 self-end bg-[#26addf] py-2 text-center text-white hover:opacity-80"
+          >Proposer un sujet !</a
+        >
+        <Image src={ThemeImg} alt="" width={555} />
+      </div>
+    </div>
+    <div class="space-y-1">
+      <h2 class="text-xl">Envie de sponsoriser un event ?</h2>
+      <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+        <a
+          href="mailto:mktd@monkeypatch.io?subject=Devenir Sponsor MonkeyTechDays"
+          class="z-10 mb-2 self-end bg-[#e5b491] py-2 text-center text-white hover:opacity-80"
+          >Devenir sponsor</a
+        >
+        <Image src={SponsorImg} alt="" width={555} />
+      </div>
+    </div>
+  </div>
+</section>

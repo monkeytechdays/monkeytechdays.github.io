@@ -1,0 +1,28 @@
+---
+import { Image, Picture } from "astro:assets";
+import Scroller from "./Scroller.astro";
+import Illus from "./illus.jpg";
+import LogoFull from "./logo_full.png";
+---
+
+<div
+  class="grid [grid-template-areas:'stack'] before:absolute before:h-full before:w-full before:bg-gradient-to-b before:from-black before:from-0% before:to-transparent before:to-35% [&>*]:[grid-area:stack]"
+>
+  <Picture
+    src={Illus}
+    formats={["avif", "webp"]}
+    alt=""
+    class="h-[100svh] w-full object-cover"
+    loading="eager"
+  />
+  <div class="z-10 grid h-[100svh] grid-rows-[1fr_1fr]">
+    <Image
+      src={LogoFull}
+      alt="Logo MonkeyTechDays"
+      class="row-start-2 self-center justify-self-center"
+      width={1140}
+      loading="eager"
+    />
+  </div>
+  <Scroller />
+</div>

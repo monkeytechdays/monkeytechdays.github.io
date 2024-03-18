@@ -7,20 +7,22 @@ const events = (await getCollection("mktds"))
   .filter((evt) => evt.data.date < new Date());
 ---
 
-<section class="my-5">
-  <h1 class="my-2 text-center text-4xl font-bold text-main-900">
-    Précédents Rendez-Vous
-  </h1>
-  <div class="mt-4 flex flex-wrap justify-center gap-6">
-    {
-      events.map((evt) => (
-        <EventCard
-          img={evt.data.thumbnail}
-          slug={evt.slug}
-          name={evt.data.name}
-          type="mktd"
-        />
-      ))
-    }
+<section>
+  <div class="container m-auto px-4 py-8">
+    <h1 class="mb-4 text-center text-4xl font-bold text-main-900">
+      Précédents rendez-vous
+    </h1>
+    <div class="mt-4 flex flex-wrap justify-center gap-6">
+      {
+        events.map((evt) => (
+          <EventCard
+            img={evt.data.thumbnail}
+            slug={evt.slug}
+            name={evt.data.name}
+            type="mktd"
+          />
+        ))
+      }
+    </div>
   </div>
 </section>

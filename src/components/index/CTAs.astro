@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import SponsorImg from "../../assets/sponsor.jpg";
+import ThemeImg from "../../assets/theme.jpg";
+---
+
+<section>
+  <div class="container m-auto px-4 pb-8">
+    <div class="flex flex-wrap justify-around gap-2">
+      <div class="space-y-1">
+        <h2 class="text-xl">Envie d'expérimenter une techno ?</h2>
+        <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+          <a
+            rel="noopener"
+            href="https://github.com/monkeytechdays/cfp/issues/new"
+            class="z-10 mb-2 self-end bg-[#26addf] py-2 text-center text-black hover:opacity-80"
+            >Proposer un sujet !</a
+          >
+          <Image src={ThemeImg} alt="" width={555} />
+        </div>
+      </div>
+      <div class="space-y-1">
+        <h2 class="text-xl">Envie de sponsoriser un event ?</h2>
+        <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+          <a
+            href="mailto:mktd@monkeypatch.io?subject=Devenir Sponsor MonkeyTechDays"
+            class="z-10 mb-2 self-end bg-[#e5b491] py-2 text-center text-black hover:opacity-80"
+            >Devenir sponsor</a
+          >
+          <Image src={SponsorImg} alt="" width={555} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,6 +1,5 @@
 ---
 import { Image, Picture } from "astro:assets";
-import Scroller from "./Scroller.astro";
 import Illus from "./illus.jpg";
 import LogoFull from "./logo_full.png";
 ---
@@ -12,17 +11,20 @@ import LogoFull from "./logo_full.png";
     src={Illus}
     formats={["avif", "webp"]}
     alt=""
-    class="h-[100svh] w-full object-cover"
+    widths={[400, 720, Illus.width]}
+    sizes={`(max-width: 400px) 400px, (max-width: 720px) 720px, ${Illus.width}px`}
+    class="w-full object-cover sm:h-[80svh]"
     loading="eager"
   />
-  <div class="z-10 grid h-[100svh] grid-rows-[1fr_1fr]">
+  <div class="z-10 grid grid-rows-[1fr_1fr] px-4 sm:h-[80svh]">
     <Image
       src={LogoFull}
       alt="Logo MonkeyTechDays"
-      class="row-start-2 self-center justify-self-center"
-      width={1140}
+      class="row-start-2 w-[1140px] self-center justify-self-center"
+      widths={[380, 700, 1140]}
+      sizes={`(max-width: 400px) 380px, (max-width: 720px) 700px, 1140px`}
       loading="eager"
     />
   </div>
-  <Scroller />
+  <!-- <Scroller /> -->
 </div>

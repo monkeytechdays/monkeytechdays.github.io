@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import About from "../components/index/About.astro";
+import CTAs from "../components/index/CTAs.astro";
 import Free from "../components/index/Free.astro";
 import Hero from "../components/index/Hero.astro";
 import PreviousSessions from "../components/index/PreviousSessions.astro";
@@ -14,14 +15,15 @@ import { SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead description={SITE_DESCRIPTION} />
   </head>
-  <body class="flex h-[100dvh] flex-col text-[#777777]">
+  <body class="flex h-[100dvh] flex-col text-[#797676]">
     <header>
       <StickyHeader />
       <Hero />
     </header>
-    <main class="container m-auto px-4">
+    <main>
       <UpcomingSessions />
       <About />
+      <CTAs />
       <Free />
       <PreviousSessions />
     </main>

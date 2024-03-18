@@ -1,18 +1,14 @@
-import tailwind from "@astrojs/tailwind";
-import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-
-import vercel from "@astrojs/vercel/serverless";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: "viewport"
+    defaultStrategy: "viewport",
   },
   site: "http://www.monkeytechdays.com",
   integrations: [tailwind(), icon(), react()],
-  output: "server",
-  adapter: vercel()
 });

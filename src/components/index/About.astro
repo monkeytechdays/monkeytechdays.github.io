@@ -5,30 +5,32 @@ import Meal from "./meal.jpg";
 import Teamwork from "./teamwork.jpg";
 ---
 
-<section class="my-5">
-  <h1 class="my-2 text-center text-4xl font-bold text-main-900">A propos</h1>
-  <p class="mb-2 text-center text-2xl">
-    Rassembler des TechAddicts pour évaluer des technos Innovantes
-  </p>
-  <div class="space-y-2 text-center">
-    <p>
-      Un MonkeyTechDay est un événement rassemblant des TechAddicts pour
-      expérimenter et évaluer en équipe des technos innovantes au travers de
-      défis techniques.
+<section>
+  <div class="container m-auto px-4 py-8">
+    <h1 class="mb-4 text-center text-4xl font-bold text-main-900">A propos</h1>
+    <p class="mb-2 text-center text-2xl">
+      Rassembler des TechAddicts pour évaluer des technos Innovantes
     </p>
-    <p>
-      A chaque défi, les participants, coachés par des Experts, analysent les
-      problèmes posés, codent et présentent sous forme de pitchs de 5 minutes
-      leurs résultats.
-    </p>
-    <p>
-      Le but est d’approfondir la connaissance de ces technos en échangeant avec
-      la communauté dans un cadre agréable et une ambiance fun.
-    </p>
-  </div>
-  <div class="my-6 flex flex-wrap justify-around gap-2">
-    <Perk img={Teamwork} label="Expérimenter en équipe" />
-    <Perk img={Challenges} label="Défis techniques" />
-    <Perk img={Meal} label="Repas et collations offerts" />
+    <div class="space-y-2 text-center">
+      <p>
+        Un MonkeyTechDay est un événement rassemblant des TechAddicts pour
+        expérimenter et évaluer en équipe des technos innovantes au travers de
+        défis techniques.
+      </p>
+      <p>
+        A chaque défi, les participants, coachés par des Experts, analysent les
+        problèmes posés, codent et présentent sous forme de pitchs de 5 minutes
+        leurs résultats.
+      </p>
+      <p>
+        Le but est d’approfondir la connaissance de ces technos en échangeant
+        avec la communauté dans un cadre agréable et une ambiance fun.
+      </p>
+    </div>
+    <div class="my-6 flex flex-wrap justify-around gap-2">
+      <Perk img={Teamwork} label="Expérimenter en équipe" />
+      <Perk img={Challenges} label="Défis techniques" />
+      <Perk img={Meal} label="Repas et collations offerts" />
+    </div>
   </div>
 </section>

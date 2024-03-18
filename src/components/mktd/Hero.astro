@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { type CollectionEntry } from "astro:content";
-import Logo from "../logo.png";
+import Logo from "../logo.svg";
 import { ButtonWithMovingBorderEffect } from "./ButtonWithMovingBorderEffect";
 
 type Props = CollectionEntry<"mktds">;
@@ -9,9 +9,9 @@ type Props = CollectionEntry<"mktds">;
 const mktd = Astro.props;
 
 const eventImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/events/*.{jpeg,jpg,png,gif,svg}",
+  "/public/events/*.{jpeg,jpg,png,gif,svg}",
 );
-const mktdImgSrc = eventImages[`/src/assets/events/${mktd.data.thumbnail}`];
+const mktdImgSrc = eventImages[`/public/events/${mktd.data.thumbnail}`];
 const formattedDate = mktd.data.date.toLocaleDateString("fr-FR", {
   year: "numeric",
   month: "long",
@@ -59,6 +59,7 @@ const mktdIsUpcoming = mktd.data.date > new Date();
       src={mktdImgSrc()}
       alt=""
       width={500}
+      densities={[1.5, 2]}
       class="rounded-br-xl rounded-tl-xl"
       loading="eager"
     />

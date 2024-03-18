@@ -7,14 +7,15 @@ interface Props {
   slug: string;
   name: string;
   size?: "small" | "large";
+  eagerLoading?: boolean;
 }
 
-const { img, slug, name, type, size = "small" } = Astro.props;
+const { img, slug, name, type, size = "small", eagerLoading } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/events/*.{jpeg,jpg,png,gif}",
+  "/public/events/*.{jpeg,jpg,png,gif}",
 );
-const imgSrc = images[`/src/assets/events/${img}`];
+const imgSrc = images[`/public/events/${img}`];
 ---
 
 <a href={`${type}/${slug}`} class="block aspect-video">
@@ -22,7 +23,9 @@ const imgSrc = images[`/src/assets/events/${img}`];
     src={imgSrc()}
     loading="lazy"
     alt={name}
-    class="h-full w-full rounded-sm object-cover"
+    class="h-full rounded-sm object-cover"
     width={size === "small" ? 300 : 400}
+    densities={[1.5, 2]}
+    loading={eagerLoading ? "eager" : "lazy"}
   />
 </a>

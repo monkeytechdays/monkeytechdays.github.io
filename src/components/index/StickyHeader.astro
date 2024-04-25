@@ -28,7 +28,7 @@ import Logo from "../logo.svg";
 </nav>
 
 <script>
-  document.addEventListener("astro:after-swap", () => {
+  document.addEventListener("astro:page-load", () => {
     const header = document.querySelector("#sticky-header")!;
     if (!header) return;
     function updateHeader() {

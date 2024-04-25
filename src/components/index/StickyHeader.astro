@@ -28,15 +28,20 @@ import Logo from "../logo.svg";
 </nav>
 
 <script>
-  const header = document.querySelector("#sticky-header")!;
-  window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 0) {
-      header.classList.add("bg-main-900");
-      header.classList.add("border-b");
-    } else {
-      header.classList.remove("bg-main-900");
-      header.classList.remove("border-b");
+  document.addEventListener("astro:after-swap", () => {
+    const header = document.querySelector("#sticky-header")!;
+    if (!header) return;
+    function updateHeader() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        header.classList.add("bg-main-900");
+        header.classList.add("border-b");
+      } else {
+        header.classList.remove("bg-main-900");
+        header.classList.remove("border-b");
+      }
     }
+    updateHeader();
+    window.addEventListener("scroll", updateHeader);
   });
 </script>

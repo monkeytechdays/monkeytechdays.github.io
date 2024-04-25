@@ -18,7 +18,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 const imgSrc = images[`/public/events/${img}`];
 ---
 
-<a href={`${type}/${slug}`} class="block aspect-video">
+<a href={`${type}/${slug}/`} class="block aspect-video">
   <Image
     src={imgSrc()}
     loading="lazy"

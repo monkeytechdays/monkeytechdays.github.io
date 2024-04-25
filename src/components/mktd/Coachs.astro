@@ -24,7 +24,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
       <ul class="flex flex-wrap justify-around gap-6 text-lg">
         {
           mktd.data.coachs.map((coach) => (
-            <li class="flex items-center gap-4 rounded-full bg-white p-2 shadow-md">
+            <li class="flex items-center gap-4 rounded-full border border-black border-opacity-10 bg-white p-2 shadow-md">
               <Image
                 src={coachImages[`/src/assets/coachs/${coach.img}`]()}
                 alt=""
@@ -38,7 +38,12 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
                   {coach.twitter && (
                     <>
                       {" "}
-                      <a class="text-main-500" href="/">
+                      <a
+                        class="text-main-500"
+                        href={`https://twitter.com/${coach.twitter}`}
+                        target="_blank"
+                        rel="noopener"
+                      >
                         (@{coach.twitter})
                       </a>
                     </>

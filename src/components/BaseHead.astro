@@ -14,36 +14,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description, image = "/logo.jpg" } = Astro.props;
 ---
 
-<!-- Matomo -->
 <script>
-  var _paq = (window as any)._paq || [];
-  _paq.push(["setRequestMethod", "POST"]);
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.monkeytechdays.com"]);
-  _paq.push(["setDomains", ["*.monkeytechdays.com"]]);
+  var _paq = ((window as any)._paq = (window as any)._paq || []);
   _paq.push(["trackPageView"]);
   _paq.push(["enableLinkTracking"]);
-  if (document.referrer) {
-    _paq.push(["setReferrerUrl", document.referrer]);
-  }
   (function () {
     var u = "//analytics.monkeypatch.io/";
-    _paq.push(["setRequestMethod", "POST"]);
-    _paq.push(["setTrackerUrl", u + "js/"]);
-    _paq.push(["setSiteId", "1"]);
-
+    _paq.push(["setTrackerUrl", u + "matomo.php"]);
+    _paq.push(["setSiteId", "2"]);
     var d = document,
       g = d.createElement("script"),
       s = d.getElementsByTagName("script")[0];
-    g.type = "text/javascript";
     g.async = true;
-    g.defer = true;
-    g.src = u + "js/";
+    g.src = u + "matomo.js";
     s.parentNode!.insertBefore(g, s);
   })();
 </script>
 
-<!-- End Matomo Code --><!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

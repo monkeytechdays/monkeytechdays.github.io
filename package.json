@@ -10,28 +10,28 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.5.10",
-    "@astrojs/react": "3.3.1",
+    "@astrojs/check": "0.9.3",
+    "@astrojs/react": "3.6.2",
     "@astrojs/tailwind": "5.1.0",
-    "@fontsource/saira": "5.0.28",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
-    "astro": "4.6.4",
-    "astro-icon": "1.1.0",
+    "@fontsource/saira": "5.0.29",
+    "@types/react": "18.3.4",
+    "@types/react-dom": "18.3.0",
+    "astro": "4.15.1",
+    "astro-icon": "1.1.1",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
-    "framer-motion": "11.1.7",
-    "prettier-plugin-tailwindcss": "0.5.14",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sharp": "0.33.3",
-    "tailwind-merge": "2.3.0",
-    "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
+    "framer-motion": "11.3.31",
+    "prettier-plugin-tailwindcss": "0.6.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sharp": "0.33.5",
+    "tailwind-merge": "2.5.2",
+    "tailwindcss": "3.4.10",
+    "typescript": "5.5.4"
   },
   "devDependencies": {
-    "prettier": "3.2.5",
-    "prettier-plugin-astro": "0.13.0"
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "0.14.1"
   },
   "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
   "engines": {

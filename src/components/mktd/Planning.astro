@@ -8,7 +8,6 @@ const mktd = Astro.props;
 
 const startTime = mktd.data.planning[0].start;
 const endTime = mktd.data.planning.at(-1)!.end;
-const currentDate = new Date();
 ---
 
 <section class="bg-main-900 text-white">
@@ -16,10 +15,11 @@ const currentDate = new Date();
     <div class="">
       <h2 class="mb-4 text-center text-4xl font-bold">Planning</h2>
       <p class="text-center font-bold">
-        <time datetime={parse(startTime, "HH'h'mm", currentDate).toISOString()}
+        <time
+          datetime={parse(startTime, "HH'h'mm", mktd.data.date).toISOString()}
           >{startTime}</time
         > - <time
-          datetime={parse(endTime, "HH'h'mm", currentDate).toISOString()}
+          datetime={parse(endTime, "HH'h'mm", mktd.data.date).toISOString()}
           >{endTime}</time
         >
       </p>

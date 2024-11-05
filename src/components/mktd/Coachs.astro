@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import { type CollectionEntry } from "astro:content";
 
@@ -33,18 +34,20 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
                 width={80}
               />
               <div>
-                <div>
+                <div class="flex items-center gap-1">
                   <span class="font-bold">{coach.name}</span>
                   {coach.twitter && (
                     <>
                       {" "}
                       <a
-                        class="text-main-500"
+                        class="inline-flex text-main-500"
                         href={`https://twitter.com/${coach.twitter}`}
                         target="_blank"
                         rel="noopener"
+                        title={`@${coach.twitter}`}
+                        aria-label={`@${coach.twitter}`}
                       >
-                        (@{coach.twitter})
+                        <Icon name="x" class="inline" size={16} />
                       </a>
                     </>
                   )}

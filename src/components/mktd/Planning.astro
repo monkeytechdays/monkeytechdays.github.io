@@ -16,11 +16,13 @@ const endTime = mktd.data.planning.at(-1)!.end;
       <h2 class="mb-4 text-center text-4xl font-bold">Planning</h2>
       <p class="text-center font-bold">
         <time
-          datetime={parse(startTime, "HH'h'mm", mktd.data.date).toISOString()}
-          >{startTime}</time
+          datetime={parse(startTime, "HH'h'mm", mktd.data.date)
+            .toISOString()
+            .slice(0, -1)}>{startTime}</time
         > - <time
-          datetime={parse(endTime, "HH'h'mm", mktd.data.date).toISOString()}
-          >{endTime}</time
+          datetime={parse(endTime, "HH'h'mm", mktd.data.date)
+            .toISOString()
+            .slice(0, -1)}>{endTime}</time
         >
       </p>
       <ul

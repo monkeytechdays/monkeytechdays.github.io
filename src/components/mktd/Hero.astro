@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { type CollectionEntry } from "astro:content";
 import Logo from "../logo.svg";
 import { ButtonWithMovingBorderEffect } from "./ButtonWithMovingBorderEffect";
+import { formatISO } from "date-fns";
 
 type Props = CollectionEntry<"mktds">;
 
@@ -17,7 +18,7 @@ const formattedDate = mktd.data.date.toLocaleDateString("fr-FR", {
   month: "long",
   day: "numeric",
 });
-const date = mktd.data.date.toISOString().split("T")[0];
+const date = formatISO(mktd.data.date, { representation: "date" });
 const mktdIsUpcoming = mktd.data.date > new Date();
 ---
 

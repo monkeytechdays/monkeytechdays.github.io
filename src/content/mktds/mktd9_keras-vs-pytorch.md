@@ -73,5 +73,5 @@ planning:
 
 inscriptionLinks:
   - url: https://www.meetup.com/fr-FR/monkeytechdays/events/258064999/
-    type: meetup
+     type: meetup
 ---

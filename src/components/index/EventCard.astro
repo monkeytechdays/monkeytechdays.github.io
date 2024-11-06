@@ -13,9 +13,9 @@ interface Props {
 const { img, slug, name, type, size = "small", eagerLoading } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/public/events/*.{jpeg,jpg,png,gif}",
+  "/src/assets/events/*.{jpeg,jpg,png,gif}",
 );
-const imgSrc = images[`/public/events/${img}`];
+const imgSrc = images[`/src/assets/events/${img}`];
 ---
 
 <a href={`${type}/${slug}/`} class="block aspect-video">

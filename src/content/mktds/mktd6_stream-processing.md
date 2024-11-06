@@ -11,7 +11,7 @@ requirements:
   - Connaître Java (ou Scala)
   - Venir avec son PC 💻
   - Docker et JDK8 installés
-  - àson IDE préféré
+  - Son IDE préféré
 
 program:
   - Expérimenter Flink ou Kafka en équipe
@@ -65,5 +65,7 @@ planning:
     start: 18h00
     end: 19h00
 
-inscriptionLink: https://www.meetup.com/monkeytechdays/events/246514263/
+inscriptionLinks:
+  - url: https://www.meetup.com/monkeytechdays/events/246514263/
+    type: meetup
 ---

@@ -10,12 +10,11 @@ description:
   - Nous nous intéresserons notament au "pattern matching" et au thread léger
 
 requirements:
-  - Venir avec son ordinateur 💻,
-  - avec à minima la JDK 23 et un IDE installés (un guide 
-   d’installation sera fourni une semaine avant l’événement),
-  - et si possible les droits admin/root,
-  - de la bonne humeur !
-
+  - Venir avec son ordinateur 💻
+  - Avec à minima la JDK 23 et un IDE installés (un guide
+    d’installation sera fourni une semaine avant l’événement)
+  - Et si possible les droits admin/root
+  - De la bonne humeur !
 
 program:
   - Expérimenter les nouveautés des dernières versions de Java en équipe
@@ -27,7 +26,6 @@ coachs:
   - name: Guillaume Andrieu
     img: gan.jpg
     description: Expert Back-End et système distribué
-    tech: Java 23
 
 community:
   - logo: toulousejug.png
@@ -63,5 +61,9 @@ planning:
     start: 18h00
     end: 19h00
 
-inscriptionLink: https://www.meetup.com/fr-FR/monkeytechdays/events/298326303/
+inscriptionLinks:
+  - url: https://www.meetup.com/fr-FR/monkeytechdays/events/298326303/
+    type: meetup
+  - url: https://www.linkedin.com/events/7251941430472929280/comments/
+    type: linkedIn
 ---

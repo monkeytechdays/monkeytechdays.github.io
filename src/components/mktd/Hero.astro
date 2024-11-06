@@ -4,6 +4,7 @@ import { type CollectionEntry } from "astro:content";
 import Logo from "../logo.svg";
 import { ButtonWithMovingBorderEffect } from "./ButtonWithMovingBorderEffect";
 import { formatISO } from "date-fns";
+import { Icon } from "astro-icon/components";
 
 type Props = CollectionEntry<"mktds">;
 
@@ -33,26 +34,30 @@ const mktdIsUpcoming = mktd.data.date > new Date();
       /></a
     >
   </div>
-  <div
-    class="container m-auto flex flex-wrap items-center justify-around gap-4 px-4 pb-8"
-  >
-    <div class="grid grid-rows-[1fr_auto_1fr]">
-      <div class="row-start-2">
+  <div class="container m-auto flex flex-wrap justify-around gap-4 px-4 pb-8">
+    <div
+      class="flex flex-col items-center gap-4"
+      class:list={mktdIsUpcoming ? "justify-end" : "justify-center"}
+    >
+      <div class="">
         <time datetime={date}>{formattedDate}</time>
         <h1 class="text-4xl font-bold">{mktd.data.name}</h1>
         <p class="text-xl first-letter:uppercase">{mktd.data.subtitle}</p>
       </div>
       {
         mktdIsUpcoming && (
-          <div class="row-start-3 mt-6 justify-self-start">
-            <ButtonWithMovingBorderEffect
-              client:idle
-              rel="noopener"
-              href={mktd.data.inscriptionLink}
-            >
-              S'inscrire
-            </ButtonWithMovingBorderEffect>
-          </div>
+          <ButtonWithMovingBorderEffect client:idle className="gap-2">
+            S'inscrire
+            {mktd.data.inscriptionLinks.map((inscriptionLink) => (
+              <a
+                rel="noopener"
+                href={inscriptionLink.url}
+                aria-label={inscriptionLink.type}
+              >
+                <Icon name={inscriptionLink.type} />
+              </a>
+            ))}
+          </ButtonWithMovingBorderEffect>
         )
       }
     </div>

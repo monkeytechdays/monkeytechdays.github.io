@@ -52,7 +52,12 @@ const mktds = defineCollection({
         end: z.string(),
       }),
     ),
-    inscriptionLink: z.string(),
+    inscriptionLinks: z.array(
+      z.object({
+        url: z.string(),
+        type: z.enum(["meetup", "linkedIn"]),
+      }),
+    ),
   }),
 });
 

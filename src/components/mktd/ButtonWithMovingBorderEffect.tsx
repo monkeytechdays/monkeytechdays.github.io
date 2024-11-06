@@ -27,7 +27,7 @@ export function ButtonWithMovingBorderEffect({
   [key: string]: any;
 }) {
   return (
-    <a
+    <div
       className={cn(
         "relative block h-16 w-40 overflow-hidden bg-transparent p-[1px] text-xl",
         containerClassName,
@@ -62,7 +62,7 @@ export function ButtonWithMovingBorderEffect({
       >
         {children}
       </div>
-    </a>
+    </div>
   );
 }
 

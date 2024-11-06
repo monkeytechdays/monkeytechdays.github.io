@@ -60,5 +60,7 @@ planning:
     start: 18h30
     end: 19h30
 
-inscriptionLink: https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/236337299/
+inscriptionLinks:
+  - url: https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/236337299/
+    type: meetup
 ---

@@ -5,7 +5,7 @@ thumbnail: mktd9_keras-vs-pytorch.jpg
 subtitle: Keras, pyTorch
 description:
   - Les frameworks de Deep Learning se multiplient avec des solutions comme Keras, Torch, CNTK, Caffe …
-  Dans un environnement en plein changement, nous vous proposons de comprendre les principes fondamentaux d’un réseau profond de neurones artificiels et appliquer les techniques modernes de Deep Learning à travers deux gros Framework du marché (:) Keras et pyTorch.
+  - Dans un environnement en plein changement, nous vous proposons de comprendre les principes fondamentaux d’un réseau profond de neurones artificiels et appliquer les techniques modernes de Deep Learning à travers deux gros Framework du marché (:) Keras et pyTorch.
 
 requirements:
   - Ouvert aux Data scientists et aux développeur(se)s Back-End/Full Stack
@@ -25,21 +25,21 @@ program:
 
 coachs:
   - name: Gérard
-    img: gerard.png
-    description: Senior data Scientist
-    tech: pyTorch
+     img: gerard.png
+     description: Senior data Scientist
+     tech: pyTorch
   - name: Florent Le Gac
-    img: flg.jpg
-    description: Back-End Expert - Deep Learning Enthusiast
-    tech: Keras
+     img: flg.jpg
+     description: Back-End Expert - Deep Learning Enthusiast
+     tech: Keras
 
 community:
   - logo: gdgtoulouse.png
-    url: http://www.gdgtoulouse.fr/
-    name: GDG Toulouse
+     url: http://www.gdgtoulouse.fr/
+     name: GDG Toulouse
   - logo: logo_tds.png
-    url: https://www.tlse-data-science.fr/
-    name: Toulouse Data Science - TDS
+     url: https://www.tlse-data-science.fr/
+     name: Toulouse Data Science - TDS
 
 location:
   url: http://www.harrycow.com/
@@ -53,12 +53,12 @@ planning:
     end: 9h00
   - labels:
       - Présentation du programme et des coachs, Ice Breaker
-      - Courte introduction aux nouveautés de Java 23
+      - Courte introduction à Next.js et Qwik
       - Première série d'exos (Exploration de la techno)
     start: 9h00
-    end: 12h30
+    end: 12h00
   - label: Pause Déjeuner
-    start: 12h30
+    start: 12h00
     end: 13h15
   - labels:
       - Mot du Sponsor
@@ -69,6 +69,7 @@ planning:
   - label: Apéro dînatoire
     start: 18h00
     end: 19h00
+
 
 inscriptionLinks:
   - url: https://www.meetup.com/fr-FR/monkeytechdays/events/258064999/

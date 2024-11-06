@@ -7,13 +7,13 @@ description:
   - 2018 est sans aucun doute l’année des Web Components.
   - En effet Chrome, Firefox (sous flag) et maintenant Safari supportent les spécifications customs elements v1 sans avoir besoin de polyfill. Les géants du Web tel que Google avec Polymer 3 et Angular Elements poussent de plus en plus la démocratisation de ces standards du Web à grande échelle.
 requirements:
-  - Venir avec son ordinateur 💻,
-  - avec votre IDE préféré et Chrome,
+  - Venir avec son ordinateur 💻,
+  - avec votre IDE préféré et Chrome,
 program:
-  - Expérimenter Web Components Native ou StencilJS en équipe
-  - Évaluer les technos
-  - Réaliser des défis techniques
-  - Échanger avec la communauté toulousaine
+  - Expérimenter Web Components Native ou StencilJS en équipe
+  - Évaluer les technos
+  - Réaliser des défis techniques
+  - Échanger avec la communauté toulousaine
 coachs:
   - name: Julien
     img: benoit_el_amrani.jpg

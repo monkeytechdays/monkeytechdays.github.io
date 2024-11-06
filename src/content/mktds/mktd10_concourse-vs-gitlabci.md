@@ -1,36 +1,37 @@
 ---
-date: 2024-12-13
-name: Java 23
-thumbnail: mktd13_thumbnail.jpg
-subtitle: Explorons les NOUVEAUTÉS!
+date: 2019-09-27
+name: Delivery Pipeline CI/CD
+thumbnail: mktd10_concourse-vs-gitlab.png
+subtitle: Concourse, GitLab CI
 description:
-  - Comme du bon vin 🍷, Java continue de se bonifier avec l’âge !
-  - Chaque version apporte son lot de surprises !
-  - Java 23... mais pas seulement, car nous expérimenterons avec les principales avancées depuis la JDK 8.
-  - Nous nous intéresserons notament au "pattern matching" et au thread léger
+  - Expérimentez GitLab et Concourse, avant de vous lancer dans un pipeline complet avec l’une des deux technos.
+  - Dans un contexte de plus en plus concurrentiel, réduire le délai de fourniture de fonctionnalités au plus vite devient un facteur clé pour les entreprises. Pour atteindre cet objectif, il est nécessaire de passer par l’automatisation ainsi que les différents contrôles (i.e. tests) nécessaires à la validation du produit. Ainsi, les entreprises mettent en place des pipeline de livraison (ou de déploiement, selon leur niveau de maturité) pour réaliser la “chaîne de fabrication” de leurs logiciels.
 
 requirements:
   - Venir avec son ordinateur 💻
-  - Avec à minima la JDK 23 et un IDE installés (un guide
-    d’installation sera fourni une semaine avant l’événement)
-  - Et si possible les droits admin/root
+  - Docker (17.04.0+), Docker compose (1.22.0)
+  - 4Gb RAM
+  - Les droits admin/root
   - De la bonne humeur !
 
 program:
-  - Expérimenter les nouveautés des dernières versions de Java en équipe
+  - Expérimenter GitLab ou Concourse en équipe
   - Évaluer les technos
   - Réaliser des défis techniques
   - Échanger avec la communauté toulousaine
 
 coachs:
-  - name: Guillaume Andrieu
-    img: gan.jpg
-    description: Expert Back-End et système distribué
+  - name: Logan Mauzaize
+     img: lma.jpg
+     description: Bête de Concourse en CI/CD
+  - name: Nicolas Lalevée
+     img: nla.jpg
+     description: Débuggeur de systèmes distribués
 
 community:
   - logo: toulousejug.png
-    url: https://toulousejug.org/
-    name: Toulouse JUG
+     url: https://toulousejug.org/
+     name: Toulouse JUG
 
 location:
   url: http://www.harrycow.com/
@@ -40,30 +41,28 @@ location:
 
 planning:
   - label: Accueil des participant(e)s
-    start: 8h45
-    end: 9h00
+     start: 8h45
+     end: 9h00
   - labels:
-      - Présentation du programme et des coachs, Ice Breaker
-      - Courte introduction aux nouveautés de Java 23
-      - Première série d'exos (Exploration de la techno)
-    start: 9h00
-    end: 12h00
+         - Présentation du programme et des coachs, Ice Breaker
+         - Courte introduction aux nouveautés de Java 23
+         - Première série d'exos (Exploration de la techno)
+         start: 9h00
+         end: 12h00
   - label: Pause Déjeuner
-    start: 12h00
-    end: 13h15
+     start: 12h00
+     end: 13h15
   - labels:
-      - Mot du Sponsor
-      - Défi(s) technique(s) entre les équipes
-      - Synthèse technique et table ronde
-    start: 13h15
-    end: 18h00
+         - Mot du Sponsor
+         - Défi(s) technique(s) entre les équipes
+         - Synthèse technique et table ronde
+      start: 13h15
+      end: 18h00
   - label: Apéro dînatoire
-    start: 18h00
-    end: 19h00
+      start: 18h00
+      end: 19h00
 
 inscriptionLinks:
-  - url: https://www.meetup.com/fr-FR/monkeytechdays/events/298326303/
-    type: meetup
-  - url: https://www.linkedin.com/events/7251941430472929280/comments/
-    type: linkedIn
+  - url: https://www.meetup.com/fr-FR/monkeytechdays/events/262896017/
+      type: meetup
 ---

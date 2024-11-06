@@ -65,12 +65,12 @@ planning:
       - Défi(s) technique(s) entre les équipes
       - Synthèse technique et table ronde
     start: 13h15
-    end: 18h30
+    end: 18h00
   - label: Apéro dînatoire
-    start: 18h30
-    end: 19h30
+    start: 18h00
+    end: 19h00
 
- inscriptionLinks:
+inscriptionLinks:
   - url: https://www.meetup.com/fr-FR/monkeytechdays/events/253407725/
     type: meetup
 ---

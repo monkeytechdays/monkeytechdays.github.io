@@ -24,7 +24,7 @@ coachs:
     email: igor@monkeypatch.io
     tech: Feign
   - name: Emmanuel Vinas
-    img: emmanuel.jpg
+    img: evi.jpg
     description: Expert Java et Mobile de 10 ans d'Exp.
     email: emmanuel@monkeypatch.io
     tech: Retrofit
@@ -33,7 +33,7 @@ location:
   url: http://www.harrycow.com/
   address: 13 rue Sainte Ursule 31000 Toulouse
   iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.2108114431708!2d1.4394906157111187!3d43.60215206374777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6258220a07%3A0xf1d45637938f3453!2sHarryCow!5e0!3m2!1sfr!2sfr!4v1466094946954
-  name: Harry Cow
+  name: HarryCow
 
 planning:
   - label: Accueil des participant(e)s

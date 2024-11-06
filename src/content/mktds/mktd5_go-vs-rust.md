@@ -22,7 +22,7 @@ coachs:
     twitter: kendo5731
     tech: Go
   - name: Logan Mauzaize
-    img: logan.jpg
+    img: LMA.jpg
     description: Expert Backend
     twitter: LoganMzz
     tech: Rust

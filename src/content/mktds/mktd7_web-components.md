@@ -4,7 +4,7 @@ name: Web Components
 thumbnail: mktd7_web-components.jpg
 subtitle: Spécification native, StencilJS
 description:
-  - 2018 est sans aucun doute l’année des Web Components.
+  - 2018 est sans aucun doute l’année des Web Components.
   - En effet Chrome, Firefox (sous flag) et maintenant Safari supportent les spécifications customs elements v1 sans avoir besoin de polyfill. Les géants du Web tel que Google avec Polymer 3 et Angular Elements poussent de plus en plus la démocratisation de ces standards du Web à grande échelle.
 requirements:
   - Venir avec son ordinateur 💻,

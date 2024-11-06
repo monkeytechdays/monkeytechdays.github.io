@@ -5,7 +5,7 @@ thumbnail: mktd6_kafka-flink.png
 subtitle: (Apache Flink, Kafka Streams)
 description:
   - Dans un monde où tout est de plus en plus distribué, le traitement de flux ("Stream processing") est désormais un concept incontournable du Big Data.
-  Deux “frères” de la grande famille Apache, Flink et Kafka, excellent dans ce domaine et sont mis au défi pendant une journée. Guillaume et Arnaud, 2 développeurs confirmés, vous accompagneront tout au long de ce MKTD pour expérimenter et évaluer ces technos en équipe.
+  - Deux “frères” de la grande famille Apache, Flink et Kafka, excellent dans ce domaine et sont mis au défi pendant une journée. Guillaume et Arnaud, 2 développeurs confirmés, vous accompagneront tout au long de ce MKTD pour expérimenter et évaluer ces technos en équipe.
 
 requirements:
   - Connaître Java (ou Scala)

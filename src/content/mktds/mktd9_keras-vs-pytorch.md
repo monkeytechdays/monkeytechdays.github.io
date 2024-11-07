@@ -1,7 +1,7 @@
 ---
 date: 2019-03-29
 name: Explore Deep Learning
-thumbnail: mktd9_keras-vs-pytorch.jpg
+thumbnail: mktd9_keras-vs-pytorch.png
 subtitle: Keras, pyTorch
 description:
   - Les frameworks de Deep Learning se multiplient avec des solutions comme Keras, Torch, CNTK, Caffe …
@@ -25,21 +25,21 @@ program:
 
 coachs:
   - name: Gérard
-     img: gerard.png
-     description: Senior data Scientist
-     tech: pyTorch
+    img: gerard.png
+    description: Senior data Scientist
+    tech: pyTorch
   - name: Florent Le Gac
-     img: flg.jpg
-     description: Back-End Expert - Deep Learning Enthusiast
-     tech: Keras
+    img: flg.jpg
+    description: Back-End Expert - Deep Learning Enthusiast
+    tech: Keras
 
 community:
   - logo: gdgtoulouse.png
-     url: http://www.gdgtoulouse.fr/
-     name: GDG Toulouse
+    url: http://www.gdgtoulouse.fr/
+    name: GDG Toulouse
   - logo: logo_tds.png
-     url: https://www.tlse-data-science.fr/
-     name: Toulouse Data Science - TDS
+    url: https://www.tlse-data-science.fr/
+    name: Toulouse Data Science - TDS
 
 location:
   url: http://www.harrycow.com/
@@ -49,29 +49,28 @@ location:
 
 planning:
   - label: Accueil des participant(e)s
-     start: 8h45
-     end: 9h00
+    start: 8h45
+    end: 9h00
   - labels:
-         - Présentation du programme et des coachs, Ice Breaker
-         - Courte introduction à Next.js et Qwik
-         - Première série d'exos (Exploration de la techno)
-      start: 9h00
-      end: 12h00
+      - Présentation du programme et des coachs, Ice Breaker
+      - Courte introduction à Next.js et Qwik
+      - Première série d'exos (Exploration de la techno)
+    start: 9h00
+    end: 12h00
   - label: Pause Déjeuner
-      start: 12h00
-      end: 13h15
+    start: 12h00
+    end: 13h15
   - labels:
-         - Mot du Sponsor
-         - Défi(s) technique(s) entre les équipes
-         - Synthèse technique et table ronde
-     start: 13h15
-     end: 18h00
+      - Mot du Sponsor
+      - Défi(s) technique(s) entre les équipes
+      - Synthèse technique et table ronde
+    start: 13h15
+    end: 18h00
   - label: Apéro dînatoire
-      start: 18h00
-      end: 19h00
-
+    start: 18h00
+    end: 19h00
 
 inscriptionLinks:
   - url: https://www.meetup.com/fr-FR/monkeytechdays/events/258064999/
-     type: meetup
+    type: meetup
 ---

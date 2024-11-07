@@ -22,18 +22,18 @@ program:
 
 coachs:
   - name: Logan Mauzaize
-     img: lma.jpg
-     description: Bête de Concourse en CI/CD
-     tech: Concourse
+    img: lma.jpg
+    description: Bête de Concourse en CI/CD
+    tech: Concourse
   - name: Nicolas Lalevée
-     img: nla.jpg
-     description: Débuggeur de systèmes distribués
-     tech: Gitlab CI
+    img: nla.jpg
+    description: Débuggeur de systèmes distribués
+    tech: Gitlab CI
 
 community:
   - logo: toulousejug.png
-     url: https://toulousejug.org/
-     name: Toulouse JUG
+    url: https://toulousejug.org/
+    name: Toulouse JUG
 
 location:
   url: http://www.harrycow.com/
@@ -65,7 +65,6 @@ planning:
     end: 19h00
 
 inscriptionLinks:
-inscriptionLinks:
   - url: https://www.meetup.com/fr-FR/monkeytechdays/events/262896017/
-      type: meetup
+    type: meetup
 ---

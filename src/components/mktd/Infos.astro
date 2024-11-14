@@ -8,27 +8,23 @@ const mktd = Astro.props;
 
 <section>
   <div class="container m-auto gap-2 space-y-4 px-4 py-8">
-    <div class="grid grid-cols-2 items-center max-sm:grid-cols-1">
+    <div class="grid grid-cols-2 items-center max-sm:mx-4 max-sm:grid-cols-1">
       <h2 class="mb-4 text-center text-2xl font-bold text-main-900">
         Au programme
       </h2>
-      <ul
-        class="flex flex-col gap-2 text-lg max-sm:items-center max-sm:text-center"
-      >
-        {mktd.data.program.map((item) => <li class="sm:list-disc">{item}</li>)}
+      <ul class="flex flex-col gap-2 text-lg">
+        {mktd.data.program.map((item) => <li class="list-disc">{item}</li>)}
       </ul>
     </div>
     <hr />
-    <div class="grid grid-cols-2 items-center max-sm:grid-cols-1">
+    <div class="grid grid-cols-2 items-center max-sm:mx-4 max-sm:grid-cols-1">
       <h2 class="mb-4 text-center text-2xl font-bold text-main-900">
         Prérequis
       </h2>
-      <ul
-        class="flex flex-col gap-2 text-lg max-sm:items-center max-sm:text-center"
-      >
+      <ul class="flex flex-col gap-2 text-lg">
         {
           mktd.data.requirements.map((item) => (
-            <li class="sm:list-disc">{item}</li>
+            <li class="list-disc">{item}</li>
           ))
         }
       </ul>

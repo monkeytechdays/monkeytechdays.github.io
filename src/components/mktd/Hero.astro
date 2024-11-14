@@ -46,18 +46,19 @@ const mktdIsUpcoming = mktd.data.date > new Date();
       </div>
       {
         mktdIsUpcoming && (
-          <ButtonWithMovingBorderEffect client:idle className="gap-2">
-            S'inscrire
+          <div class="flex flex-wrap gap-2">
             {mktd.data.inscriptionLinks.map((inscriptionLink) => (
-              <a
-                rel="noopener"
+              <ButtonWithMovingBorderEffect
+                client:idle
+                className="gap-2"
                 href={inscriptionLink.url}
-                aria-label={inscriptionLink.type}
+                aria-label={`S'incrire sur ${inscriptionLink.type}`}
               >
                 <Icon name={inscriptionLink.type} />
-              </a>
+                S'inscrire
+              </ButtonWithMovingBorderEffect>
             ))}
-          </ButtonWithMovingBorderEffect>
+          </div>
         )
       }
     </div>

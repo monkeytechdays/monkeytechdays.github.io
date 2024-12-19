@@ -22,7 +22,7 @@ const events = (await getCollection("mktds"))
             <GlowingEffect client:idle>
               <EventCard
                 img={evt.data.thumbnail}
-                slug={evt.slug}
+                id={evt.id}
                 name={evt.data.name}
                 type="mktd"
                 size="large"

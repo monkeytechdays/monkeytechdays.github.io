@@ -11,7 +11,7 @@ import Planning from "../../components/mktd/Planning.astro";
 export async function getStaticPaths() {
   const mktds = await getCollection("mktds");
   return mktds.map((mktd) => ({
-    params: { slug: mktd.slug },
+    params: { id: mktd.id },
     props: mktd,
   }));
 }

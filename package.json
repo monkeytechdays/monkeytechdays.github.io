@@ -11,29 +11,29 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/react": "3.6.2",
-    "@astrojs/tailwind": "5.1.2",
+    "@astrojs/react": "4.1.0",
+    "@astrojs/tailwind": "5.1.3",
     "@fontsource/saira": "5.1.0",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "astro": "4.16.9",
-    "astro-icon": "1.1.2",
+    "astro": "5.0.5",
+    "astro-icon": "1.1.4",
     "clsx": "2.1.1",
     "date-fns": "4.1.0",
-    "framer-motion": "11.11.11",
-    "prettier-plugin-tailwindcss": "0.6.8",
+    "framer-motion": "11.14.4",
+    "prettier-plugin-tailwindcss": "0.6.9",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "sharp": "0.33.5",
-    "tailwind-merge": "2.5.4",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3"
+    "tailwind-merge": "2.5.5",
+    "tailwindcss": "3.4.16",
+    "typescript": "5.7.2"
   },
   "devDependencies": {
-    "prettier": "3.3.3",
+    "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1"
   },
-  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
   "engines": {
     "node": ">=20"
   }

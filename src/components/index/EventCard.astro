@@ -4,13 +4,13 @@ import { Image } from "astro:assets";
 interface Props {
   type: "mktd";
   img: string;
-  slug: string;
+  id: string;
   name: string;
   size?: "small" | "large";
   eagerLoading?: boolean;
 }
 
-const { img, slug, name, type, size = "small", eagerLoading } = Astro.props;
+const { img, id, name, type, size = "small", eagerLoading } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/events/*.{jpeg,jpg,png,gif}",
@@ -18,7 +18,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 const imgSrc = images[`/src/assets/events/${img}`];
 ---
 
-<a href={`${type}/${slug}/`} class="block aspect-video">
+<a href={`${type}/${id}/`} class="block aspect-video">
   <Image
     src={imgSrc()}
     loading="lazy"

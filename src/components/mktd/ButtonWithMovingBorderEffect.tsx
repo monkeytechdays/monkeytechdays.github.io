@@ -53,7 +53,7 @@ export function ButtonWithMovingBorderEffect({
 
       <div
         className={cn(
-          "relative flex h-full w-full items-center justify-center border border-main-500 bg-main-700/[0.8] text-sm text-white antialiased backdrop-blur-xl",
+          "border-main-500 bg-main-700/[0.8] relative flex h-full w-full items-center justify-center border text-sm text-white antialiased backdrop-blur-xl",
           className,
         )}
         style={{
@@ -79,7 +79,7 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {

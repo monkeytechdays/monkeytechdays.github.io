@@ -29,7 +29,7 @@ export function ButtonWithMovingBorderEffect({
   return (
     <a
       className={cn(
-        "relative block h-16 w-40 overflow-hidden bg-transparent p-[1px] text-xl",
+        "relative block h-16 w-40 overflow-hidden bg-transparent p-px text-xl",
         containerClassName,
       )}
       style={{

@@ -9,7 +9,7 @@ import ThemeImg from "../../assets/theme.jpg";
     <div class="flex flex-wrap justify-around gap-2">
       <div class="space-y-1">
         <h2 class="text-xl">Envie d'expérimenter une techno ?</h2>
-        <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+        <div class="grid [grid-template-areas:'stack'] *:[grid-area:stack]">
           <a
             rel="noopener"
             href="https://github.com/monkeytechdays/cfp/issues/new"
@@ -21,7 +21,7 @@ import ThemeImg from "../../assets/theme.jpg";
       </div>
       <div class="space-y-1">
         <h2 class="text-xl">Envie de sponsoriser un event ?</h2>
-        <div class="grid [grid-template-areas:'stack'] [&>*]:[grid-area:stack]">
+        <div class="grid [grid-template-areas:'stack'] *:[grid-area:stack]">
           <a
             href="mailto:mktd@monkeypatch.io?subject=Devenir Sponsor MonkeyTechDays"
             class="z-10 mb-2 self-end bg-[#e5b491] py-2 text-center text-black hover:opacity-80"

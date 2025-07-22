@@ -41,7 +41,7 @@ const mktdIsUpcoming = mktd.data.date > new Date();
     >
       <div class="">
         <time datetime={date}>{formattedDate}</time>
-        <h1 class="text-4xl font-bold">{mktd.data.name}</h1>
+        <h1 class="text-4xl font-medium">{mktd.data.name}</h1>
         <p class="text-xl first-letter:uppercase">{mktd.data.subtitle}</p>
       </div>
       {
@@ -67,7 +67,7 @@ const mktdIsUpcoming = mktd.data.date > new Date();
       alt=""
       width={500}
       densities={[1.5, 2]}
-      class="rounded-br-xl rounded-tl-xl"
+      class="rounded-tl-xl rounded-br-xl"
       loading="eager"
     />
   </div>

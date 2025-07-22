@@ -1,10 +1,13 @@
 import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "http://www.monkeytechdays.com",
-  integrations: [tailwind(), icon(), react()],
+  integrations: [icon(), react()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

@@ -19,13 +19,13 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
 <section>
   <div class="container m-auto grid gap-4 px-4 py-8">
     <div>
-      <h2 class="mb-4 text-center text-4xl font-bold text-main-900">
+      <h2 class="text-main-900 mb-4 text-center text-4xl font-medium">
         Coach{mktd.data.coachs.length > 1 && "es"}
       </h2>
       <ul class="flex flex-wrap justify-around gap-6 text-lg">
         {
           mktd.data.coachs.map((coach) => (
-            <li class="flex items-center gap-4 rounded-full border border-black border-opacity-10 bg-white p-2 shadow-md">
+            <li class="flex items-center gap-4 rounded-full border border-black/10 bg-white p-2 shadow-md">
               <Image
                 src={coachImages[`/src/assets/coachs/${coach.img}`]()}
                 alt=""
@@ -35,12 +35,12 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
               />
               <div>
                 <div class="flex items-center gap-1">
-                  <span class="font-bold">{coach.name}</span>
+                  <span class="font-medium">{coach.name}</span>
                   {coach.twitter && (
                     <>
                       {" "}
                       <a
-                        class="inline-flex text-main-500"
+                        class="text-main-500 inline-flex"
                         href={`https://twitter.com/${coach.twitter}`}
                         target="_blank"
                         rel="noopener"
@@ -63,7 +63,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
     {
       mktd.data.community && (
         <div>
-          <h2 class="mb-4 mt-2 text-center text-4xl font-bold text-main-900">
+          <h2 class="text-main-900 mt-2 mb-4 text-center text-4xl font-medium">
             Communauté{mktd.data.community.length > 1 && "s"}{" "}
             {"impliquée" + (mktd.data.community.length > 1 ? "s" : "")}
           </h2>
@@ -85,7 +85,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
     {
       mktd.data.sponsor && (
         <div>
-          <h2 class="mb-4 mt-2 text-center text-4xl font-bold text-main-900">
+          <h2 class="text-main-900 mt-2 mb-4 text-center text-4xl font-medium">
             Sponsor{mktd.data.sponsor.length > 1 && "s"}
           </h2>
           <div class="flex flex-wrap justify-center gap-4">

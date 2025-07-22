@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main-50: #f1f4fd;
+  --color-main-100: #dfe7fa;
+  --color-main-200: #c6d5f7;
+  --color-main-300: #9fbbf1;
+  --color-main-400: #7297e8;
+  --color-main-500: #5173e0;
+  --color-main-600: #3c57d4;
+  --color-main-700: #3344c2;
+  --color-main-800: #2f3a9e;
+  --color-main-900: #2e3988;
+  --color-main-950: #1e234d;
+
+  --font-sans: "Saira Variable", sans-serif;
+  --default-font-family: var(--font-sans);
+}

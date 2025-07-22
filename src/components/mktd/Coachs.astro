@@ -19,7 +19,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
 <section>
   <div class="container m-auto grid gap-4 px-4 py-8">
     <div>
-      <h2 class="text-main-900 mb-4 text-center text-4xl font-medium">
+      <h2 class="mb-4 text-center text-4xl font-medium text-main-900">
         Coach{mktd.data.coachs.length > 1 && "es"}
       </h2>
       <ul class="flex flex-wrap justify-around gap-6 text-lg">
@@ -40,7 +40,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
                     <>
                       {" "}
                       <a
-                        class="text-main-500 inline-flex"
+                        class="inline-flex text-main-500"
                         href={`https://twitter.com/${coach.twitter}`}
                         target="_blank"
                         rel="noopener"
@@ -63,7 +63,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
     {
       mktd.data.community && (
         <div>
-          <h2 class="text-main-900 mt-2 mb-4 text-center text-4xl font-medium">
+          <h2 class="mt-2 mb-4 text-center text-4xl font-medium text-main-900">
             Communauté{mktd.data.community.length > 1 && "s"}{" "}
             {"impliquée" + (mktd.data.community.length > 1 ? "s" : "")}
           </h2>
@@ -85,7 +85,7 @@ const logoImages = import.meta.glob<{ default: ImageMetadata }>(
     {
       mktd.data.sponsor && (
         <div>
-          <h2 class="text-main-900 mt-2 mb-4 text-center text-4xl font-medium">
+          <h2 class="mt-2 mb-4 text-center text-4xl font-medium text-main-900">
             Sponsor{mktd.data.sponsor.length > 1 && "s"}
           </h2>
           <div class="flex flex-wrap justify-center gap-4">

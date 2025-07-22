@@ -53,7 +53,7 @@ export function ButtonWithMovingBorderEffect({
 
       <div
         className={cn(
-          "border-main-500 bg-main-700/[0.8] relative flex h-full w-full items-center justify-center border text-sm text-white antialiased backdrop-blur-xl",
+          "relative flex h-full w-full items-center justify-center border border-main-500 bg-main-700/[0.8] text-sm text-white antialiased backdrop-blur-xl",
           className,
         )}
         style={{

@@ -47,7 +47,7 @@ planning:
     end: 9h00
   - labels:
       - Présentation du programme et des coachs, Ice Breaker
-      - Courte introduction à Next.js et Qwik
+      - Courte introduction à Concourse et GitLab CI
       - Première série d'exos (Exploration de la techno)
     start: 9h00
     end: 12h00
